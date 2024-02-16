@@ -9,52 +9,64 @@ body{
     text-align: center;
     align-items: center;
     margin: 0;
+    background-color: #EBDCAF;
 }
 
-nva{
-    position: fixed;
-    width: 100%;
-    top:0;
-}
+
 section{
     background-image: url(../IMG/OIG4.jfif);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
     margin-top: 0;
-    margin-top: -20px;
+}
+span{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+}
+.menu-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .ancora{
     text-decoration: none;
     border: 2px solid black;
     border-radius: 15px;
-    background: var(--gold);
-    font-size: 20px;
+    background: #dfbf96;
+    font-size: 1.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 70px;
-    width: 130px;
-    height: 40px;
-    color: black;
+    margin: 2vw;
+    height: 6vh;
+    width: 10vw;
+    color: black; 
+    margin-left: 8vw;
+}
+.links{
+    display: flex;
+    margin: auto;
 }
 .ancora:hover{
     color: white;
 }
 .logo-ml{
-    width: 20vh;
+    
 }
 .menu{
     display: flex;
-    justify-content: space-between;
     border-bottom: 1px solid black;
     margin-bottom: -10;
+    background-color: #EBDCAF;
+    height: 20vh;
 }
 
 .sobre{
     background-color: rgba(255, 255, 255, 0.562);
     height: 20vh;
-    width: 60vh;
+    width: 60vw;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -65,25 +77,18 @@ section{
 .cliente{
     background-color: rgba(255, 255, 255, 0.582);
     height: 20vh;
-    width:100vh;
+    width:80vw;
     align-items: center;
     justify-content: center;
     display: flex;
-    margin: auto;
     border-radius: 20px;
-}
-
-footer{
-    margin-top: 50px;
+    margin: auto;
+    margin-bottom: 20px;
 }
 .contatos{
     height: 40px;
     margin-right: 50px;
 }
-.icones{
-    display: flex;
-    justify-content: end;
-}
 .title-sobre,.avaliacao{
-    padding-top: 100px;
+    padding-top: 50px;
 }
