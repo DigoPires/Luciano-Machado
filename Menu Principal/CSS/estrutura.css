@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+:root{
+    --gold:#ebe2b5;
+}
+
+body{
+    font-family: 'Questrial', sans-serif;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    background-color: #EBDCAF;
+}
+
+
+section{
+    background-image: url(../IMG/OIG4.jfif);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    margin-top: 0;
+}
+span{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+}
+.menu-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.ancora{
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 15px;
+    background: #dfbf96;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw;
+    height: 6vh;
+    width: 10vw;
+    color: black; 
+    margin-left: 8vw;
+}
+.links{
+    display: flex;
+    margin: auto;
+}
+.ancora:hover{
+    color: white;
+}
+.logo-ml{
+    
+}
+.menu{
+    display: flex;
+    border-bottom: 1px solid black;
+    margin-bottom: -10;
+    background-color: #EBDCAF;
+    height: 20vh;
+}
+
+.sobre{
+    background-color: rgba(255, 255, 255, 0.562);
+    height: 20vh;
+    width: 60vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.cliente{
+    background-color: rgba(255, 255, 255, 0.582);
+    height: 20vh;
+    width:80vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.contatos{
+    height: 40px;
+    margin-right: 50px;
+}
+.title-sobre,.avaliacao{
+    padding-top: 50px;
+}
