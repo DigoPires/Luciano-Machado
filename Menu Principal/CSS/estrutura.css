@@ -20,12 +20,6 @@ section {
     margin-top: 0;
 }
 
-.menu-principal {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
 .ancora {
     text-decoration: none;
     border: 2px solid black;
@@ -44,7 +38,8 @@ section {
 
 .links {
     display: flex;
-    margin: auto;}
+    margin: auto;
+}
 
 .ancora:hover {
     color: white;
@@ -65,37 +60,17 @@ section {
     height: 16vh;
 }
 
-.sobre {
-    background-color: rgba(255, 255, 255, 0.562);
-    height: 20vh;
-    width: 60vw;
-    align-items: center;
-    justify-content: center;
+.icones {
     display: flex;
-    margin: auto;
-    border-radius: 20px;
-}
-
-.cliente {
-    background-color: rgba(255, 255, 255, 0.582);
-    height: 20vh;
-    width: 80vw;
-    align-items: center;
+    gap: 4vw;
+    margin-top: 20px;
     justify-content: center;
-    display: flex;
-    border-radius: 20px;
-    margin: auto;
-    margin-bottom: 20px;
 }
 
 .contatos {
-    margin-top: 5vh;
-    height: 40px;
-    margin-right: 50px;
+    height: 5.5vh;
 }
 
-.title-sobre,
-.avaliacao {
-    padding-top: 50px;
-    color: rgb(0, 0, 0);
+.copyright {
+    margin-top: 30px;
 }
