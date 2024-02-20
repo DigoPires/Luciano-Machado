@@ -7,19 +7,36 @@
     <title>Menu Principal</title>
     <link rel="stylesheet" href="./CSS/estrutura.css">
     <link rel="stylesheet" href="./CSS/menu-principal.css" class="rel">
+
 </head>
 
 <body>
     <header class="header">
-        <nav class="menu">
-            <img src="./IMG/12-removebg-preview.png" alt="Logo Luciano Machado" class="logo-ml">
-            <div class="links">
-                <a href="#" class="ancora">Galeria</a>
-                <a href="#" class="ancora">Playlist</a>
-                <a href="#" class="ancora">Agenda</a>
-                <a href="#" class="ancora">Área restrita</a>
-            </div>
-        </nav>
+            <div class="flex-mobile">
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div> <!-- mobile-menu -->
+            </div> <!-- flex-mobile -->
+
+            <div class="nav-bar">
+                <div class="mobile-menu-fechar">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                </div> <!-- mobile-menu-fechar -->
+
+                <nav class="menu">
+                    <div class="logo">
+                        <img src="./IMG/12-removebg-preview.png" alt="Logo">
+                    </div>
+                    <ul>
+                        <li><a href="#" class="ancora">Galeria</a></li>
+                        <li><a href="#" class="ancora">Playlist</a></li>
+                        <li><a href="#" class="ancora">Agenda</a></li>
+                        <li><a href="#" class="ancora">Área restrita</a></li>
+                    </ul>
+                </nav>
     </header>
     <main>
         <section class="menu-principal">
@@ -42,6 +59,8 @@
         </div>
         <div class="copyright">Design by Alan, Jefferson, Julia, Rodrigo e Ryan - 2024&copy;</div>
     </footer>
+
+    <script src="./JS/script.js"></script>
 </body>
 
 </html>
