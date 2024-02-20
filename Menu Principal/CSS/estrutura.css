@@ -20,46 +20,82 @@ section {
     margin-top: 0;
 }
 
+header {
+    top: 0;
+    z-index: 999;
+    border-bottom: 1px solid black;
+}
+
+/* Design dos botões */
 .ancora {
     text-decoration: none;
     border: 2px solid black;
     border-radius: 15px;
     background: #dfbf96;
-    font-size: 1.5vw;
+    font-size: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2vw;
-    height: 6vh;
+    height: 5vh;
     width: 10vw;
     color: black;
-    margin-left: 9.1vw;
+    
 }
-
-.links {
-    display: flex;
-    margin: auto;
-}
-
 .ancora:hover {
     color: white;
 }
-
-.logo-ml {
-    height: auto;
-    width: 13vw;
-    margin-left: 1vw;
-}
-
+/* Div com LOGO e Botões */
 .menu {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid black;
+    justify-content: space-around;
     background-color: #EBDCAF;
-    padding: 10px;
-    height: 16vh;
+    height: 18vh;
+    gap: 1vw;
 }
 
+.menu li{
+    margin: 3vw;
+}
+
+/* configurando tamanho da logo */
+.logo  img {
+    max-width: 22vw;
+    max-height: 22vh;
+}
+
+
+/* .nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+} */
+
+.nav-bar nav > ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+} 
+
+.nav-bar nav > ul > li {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-bar nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s;
+}
+
+.nav-bar nav > ul > li > a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+/* Icones dos contatos */
 .icones {
     display: flex;
     gap: 4vw;
@@ -73,4 +109,127 @@ section {
 
 .copyright {
     margin-top: 30px;
+}
+
+/* criando o hamburguer menu */
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 40px;
+    height: 5px;
+    background-color: #BBA154;
+    margin: 8px;
+    border-radius: 10px;
+}
+
+/* responsividade */
+@media (max-width: 720px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    /* margem da header mobile */
+    .content-header {
+        margin: 0 10vw;
+    }
+
+    /* invertendo a posição da logo com o menu hamburguer */
+    .flex-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .mobile-menu {
+        order: 0;
+        display: block;
+    }
+    
+    .content-header {
+        display: block;
+    }
+
+    /* criando o hamburguer menu fechar (X) */
+    .mobile-menu-fechar {
+        cursor: pointer;
+        padding: 20px 0px;
+        width: 100%;
+        border-bottom: 1px solid #E7E6DF;
+    }
+
+    .mobile-menu-fechar div {
+        width: 40px;
+        height: 5px;
+        background-color: #E7E6DF;
+        margin: 8px;
+        border-radius: 10px;
+    }
+    .mobile-menu-fechar .line1{
+        transform: rotate(-45deg) translate(-1px, 7px);
+    }
+
+    .mobile-menu-fechar .line2{
+        transform: rotate(45deg) translate(-2px, -8px);
+    }
+
+    .nav-bar {
+        transform: translateX(-120%);
+        transition: transform 0.3s ease-in;
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        align-items: start;
+        width: 70vw;
+        height: 100vh;
+        background-color: #BBA154;
+        box-shadow: 2px 0px 13px 6px rgba(0,0,0,0.75);
+        z-index: 1000;
+    }
+
+    .active {
+        transform: translateX(0);
+    }
+
+    .nav-bar nav {
+        width: 100%;
+    }
+
+    .nav-bar nav > ul{
+        flex-direction: column;
+    }
+
+    .nav-bar nav > ul > li {
+        padding: 20px;
+        font-size: 0.9em;
+        font-weight: bold;
+        border-bottom: 1px solid #E7E6DF;
+    }
+
+    .nav-bar nav > ul > li > a {
+        text-decoration: none;
+        color: #E7E6DF;
+    }
+    
+    /* botão compre já */
+    .nav-bar button{
+        background-color: #E7E6DF;
+        margin: 20px auto;
+        margin-left: 10px;
+    }
+
+    .nav-bar button > p{    
+        color: #BBA154;
+    }
+
+
+    /* reconfigurando a nav-bar para o mobile */
+
 }
