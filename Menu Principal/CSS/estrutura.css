@@ -3,13 +3,16 @@
 :root {
     --gold: #ebe2b5;
 }
-
+.logo-container{
+    display: none;
+}
 body {
     font-family: 'Questrial', sans-serif;
     height: 100vh;
     text-align: center;
     margin: 0;
     background-color: #EBDCAF;
+    overflow-x: hidden;
 }
 
 section {
@@ -28,9 +31,8 @@ header {
 
 /* Design dos botões */
 .ancora {
-    text-decoration: none;
-    border: 2px solid black;
-    border-radius: 15px;
+    border: 2px solid rgb(109, 92, 66);
+    border-radius: 10px;
     background: #dfbf96;
     font-size: 2em;
     display: flex;
@@ -39,7 +41,6 @@ header {
     height: 5vh;
     width: 10vw;
     color: black;
-    
 }
 .ancora:hover {
     color: white;
@@ -59,7 +60,7 @@ header {
 }
 
 /* configurando tamanho da logo */
-.logo  img {
+.logo img {
     max-width: 22vw;
     max-height: 22vh;
 }
@@ -81,7 +82,6 @@ header {
     font-size: 0.9em;
     font-weight: bold;
     color: black;
-    text-decoration: none;
 }
 
 .nav-bar nav > ul > li > a {
@@ -92,7 +92,6 @@ header {
 
 .nav-bar nav > ul > li > a:hover{
     color: white;
-    text-decoration: none;
 }
 
 /* Icones dos contatos */
@@ -118,18 +117,40 @@ header {
 }
 
 .mobile-menu div {
-    width: 40px;
-    height: 5px;
-    background-color: #BBA154;
+    width: 60px;
+    height: 8px;
+    background-color: #000000;
     margin: 8px;
     border-radius: 10px;
 }
 
 /* responsividade */
-@media (max-width: 720px) {
+@media (max-width: 900px) {
     body {
         overflow-x: hidden;
     }
+    .logo-container{
+        display: flex;
+        margin: auto;
+    }
+    .menu .logo {
+        display: none;
+    }
+
+    .ancora{
+        width: 50vw;
+        background: none;
+        border: unset;
+    }
+    .logo img {
+        max-width: 500px;
+        max-height: 250px;
+    }
+    .menu{
+        margin-top: 20vh;
+        background: none;
+    }
+
 
     /* margem da header mobile */
     .content-header {
@@ -141,10 +162,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-
-    .logo {
-        order: 1;
+        height: 25vh;
     }
 
     .mobile-menu {
@@ -161,13 +179,13 @@ header {
         cursor: pointer;
         padding: 20px 0px;
         width: 100%;
-        border-bottom: 1px solid #E7E6DF;
+        border-bottom: 1px solid #000000;
     }
 
     .mobile-menu-fechar div {
         width: 40px;
         height: 5px;
-        background-color: #E7E6DF;
+        background-color: #000000;
         margin: 8px;
         border-radius: 10px;
     }
@@ -190,7 +208,7 @@ header {
         width: 70vw;
         height: 100vh;
         background-color: #BBA154;
-        box-shadow: 2px 0px 13px 6px rgba(0,0,0,0.75);
+        box-shadow: 2px 0px 13px 6px rgba(53, 53, 53, 0.75);
         z-index: 1000;
     }
 
@@ -199,7 +217,7 @@ header {
     }
 
     .nav-bar nav {
-        width: 100%;
+        width: 80%;
     }
 
     .nav-bar nav > ul{
@@ -207,15 +225,15 @@ header {
     }
 
     .nav-bar nav > ul > li {
-        padding: 20px;
+        padding: 0px;
         font-size: 0.9em;
         font-weight: bold;
-        border-bottom: 1px solid #E7E6DF;
+        border-bottom: 2px solid black;
     }
 
     .nav-bar nav > ul > li > a {
         text-decoration: none;
-        color: #E7E6DF;
+        color: #000000;
     }
     
     /* botão compre já */
@@ -233,3 +251,4 @@ header {
     /* reconfigurando a nav-bar para o mobile */
 
 }
+
