@@ -34,7 +34,7 @@ header {
     border: 2px solid rgb(109, 92, 66);
     border-radius: 10px;
     background: #dfbf96;
-    font-size: 2em;
+    font-size: 1.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,6 +144,7 @@ header {
         width: 84vw;
         background: none;
         border: unset;
+        font-size: 1.8em;
     }
     .logo img {
         max-width: 500px;
