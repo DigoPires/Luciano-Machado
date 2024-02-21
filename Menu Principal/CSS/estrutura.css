@@ -129,6 +129,9 @@ header {
     body {
         overflow-x: hidden;
     }
+    ul{
+        padding: 0px 0px 0px 0px;
+    }
     .logo-container{
         display: flex;
         margin: auto;
@@ -138,7 +141,7 @@ header {
     }
 
     .ancora{
-        width: 50vw;
+        width: 84vw;
         background: none;
         border: unset;
     }
@@ -226,7 +229,7 @@ header {
 
     .nav-bar nav > ul > li {
         padding: 0px;
-        font-size: 0.9em;
+        font-size: 1.3em;
         font-weight: bold;
         border-bottom: 2px solid black;
     }
