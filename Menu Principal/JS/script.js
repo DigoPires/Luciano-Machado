@@ -1,6 +1,6 @@
 const mobileMenu = document.querySelector('.mobile-menu');
 const navBar = document.querySelector('.nav-bar');
-const closeMenu = document.querySelector('.mobile-menu-fechar');
+const closeMenu = document.querySelector('.mobile-menu-fechar-x');
 const activeClass = 'active';
 
 function setTopo(){

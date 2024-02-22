@@ -11,7 +11,7 @@ body {
     height: 100vh;
     text-align: center;
     margin: 0;
-    background-color: #EBDCAF;
+    background-color:  #FFF9E6;
     overflow-x: hidden;
 }
 
@@ -26,14 +26,13 @@ section {
 header {
     top: 0;
     z-index: 999;
-    border-bottom: 1px solid black;
 }
 
 /* Design dos botões */
 .ancora {
-    border: 2px solid rgb(109, 92, 66);
+    box-shadow: 0px 5px 10px #7a6447;
     border-radius: 10px;
-    background: #dfbf96;
+    background-color: #dfbf96;
     font-size: 1.5vw;
     display: flex;
     justify-content: center;
@@ -50,8 +49,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #EBDCAF;
-    height: 18vh;
+    background-color: #FFF9E6;
+    height: 15vh;
     gap: 1vw;
 }
 
@@ -65,17 +64,10 @@ header {
     max-height: 22vh;
 }
 
-
-/* .nav-bar {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-} */
-
 .nav-bar nav > ul {
     display: flex;
     list-style: none;
-    gap: 30px;
+    align-items: center;
 } 
 
 .nav-bar nav > ul > li {
@@ -87,29 +79,47 @@ header {
 .nav-bar nav > ul > li > a {
     text-decoration: none;
     color: black;
-    transition: all 0.3s;
 }
 
 .nav-bar nav > ul > li > a:hover{
     color: white;
+    background-color: #a88e6b;
 }
+
+.nav-bar button{
+    background: linear-gradient(0.25turn, #b89568, #F1E5A8);
+    border: none;
+    box-shadow: 0px 5px 10px #7a6447;
+    width: 12vw;
+    height: 6vh;
+    border-radius: 50px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.nav-bar button:hover{
+    cursor: pointer;
+    background-color: #968166;
+    color: white;
+}
+
 
 /* Icones dos contatos */
 .icones {
     display: flex;
     gap: 4vw;
-    margin-top: 20px;
+    margin-top: 5vh;
     justify-content: center;
 }
 
 .contatos {
     height: 5.5vh;
 }
-
-.copyright {
-    margin-top: 30px;
+.copyright-div{
+    /* margin-top: 50px; */
+    font-size: 25px;
+    
 }
-
 /* criando o hamburguer menu */
 .mobile-menu {
     display: none;
@@ -124,13 +134,18 @@ header {
     border-radius: 10px;
 }
 
+footer{
+    box-shadow: 10px -1px 5px #000000;
+}
+
 /* responsividade */
 @media (max-width: 900px) {
     body {
         overflow-x: hidden;
     }
+
     ul{
-        padding: 0px 0px 0px 0px;
+        padding: 0px;
     }
     .logo-container{
         display: flex;
@@ -141,7 +156,7 @@ header {
     }
 
     .ancora{
-        width: 84vw;
+        width: 50vw;
         background: none;
         border: unset;
         font-size: 1.8em;
@@ -151,7 +166,7 @@ header {
         max-height: 250px;
     }
     .menu{
-        margin-top: 20vh;
+        margin-top: 18vh;
         background: none;
     }
 
@@ -166,7 +181,6 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 25vh;
     }
 
     .mobile-menu {
@@ -180,24 +194,21 @@ header {
 
     /* criando o hamburguer menu fechar (X) */
     .mobile-menu-fechar {
-        cursor: pointer;
-        padding: 20px 0px;
-        width: 100%;
-        border-bottom: 1px solid #000000;
+        width: 10vw;
+        padding: 30px 0px 30px 0px;
     }
 
-    .mobile-menu-fechar div {
-        width: 40px;
+    .mobile-menu-fechar-x div{
+        width: 50px;
         height: 5px;
         background-color: #000000;
         margin: 8px;
-        border-radius: 10px;
     }
-    .mobile-menu-fechar .line1{
+    .mobile-menu-fechar-x .line1{
         transform: rotate(-45deg) translate(-1px, 7px);
     }
 
-    .mobile-menu-fechar .line2{
+    .mobile-menu-fechar-x .line2{
         transform: rotate(45deg) translate(-2px, -8px);
     }
 
@@ -209,7 +220,7 @@ header {
         left: 0;
         flex-direction: column;
         align-items: start;
-        width: 70vw;
+        width: 50vw;
         height: 100vh;
         background-color: #BBA154;
         box-shadow: 2px 0px 13px 6px rgba(53, 53, 53, 0.75);
@@ -220,31 +231,40 @@ header {
         transform: translateX(0);
     }
 
-    .nav-bar nav {
-        width: 80%;
-    }
-
     .nav-bar nav > ul{
         flex-direction: column;
     }
 
     .nav-bar nav > ul > li {
         padding: 0px;
-        font-size: 1.3em;
+        font-size: 1.0em;
         font-weight: bold;
-        border-bottom: 2px solid black;
     }
 
     .nav-bar nav > ul > li > a {
         text-decoration: none;
         color: #000000;
     }
+
+    .nav-bar nav > ul > li > a > p{
+        width: 100%;
+        padding: 20px;
+        border-bottom: 2px solid #000000;
+    }
     
     /* botão compre já */
     .nav-bar button{
-        background-color: #E7E6DF;
-        margin: 20px auto;
-        margin-left: 10px;
+        background-color: #fae2c2;
+        border-color: #000000;
+        width: 20vw;
+        height: 7vh;
+        font-size: 1.2em;
+        border-style: double;
+    }
+
+    .nav-bar button:hover{
+        background-color: #968166;
+        color: white;
     }
 
     .nav-bar button > p{    
