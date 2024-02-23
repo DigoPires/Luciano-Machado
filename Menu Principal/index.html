@@ -36,9 +36,15 @@
                     <img src="./IMG/12-removebg-preview.png" alt="Logo">
                 </div>
                 <ul>
-                    <li><a href="#" class="ancora"><p>Galeria</p></a></li>
-                    <li><a href="#" class="ancora"><p>Playlist</p></a></li>
-                    <li><a href="#" class="ancora"><p>Agenda</p></a></li>
+                    <li><a href="#" class="ancora">
+                            <p>Galeria</p>
+                        </a></li>
+                    <li><a href="#" class="ancora">
+                            <p>Playlist</p>
+                        </a></li>
+                    <li><a href="#" class="ancora">
+                            <p>Agenda</p>
+                        </a></li>
                     <li><a href="#"><button>Área Restrita</button></a></li>
                 </ul>
             </nav>
@@ -47,16 +53,54 @@
 
     <main>
         <section class="menu-principal">
+            <!-- sobre o músico -->
             <div class="sobre-artista">
                 <h2 class="title-sobre">Sobre</h2>
                 <p class="sobre">Conteúdo sobre o artista.</p>
             </div>
             <div class="op-clientes">
                 <h2 class="avaliacao">Avaliações de clientes</h2>
-                <p class="cliente">Comentários de clientes.</p>
+                <!-- carrosel -->
+                <div class="carrosel-clientes">
+                    <button class="control-btn" onclick="prevSlide()">&lt;</button>
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper">
+                            <div class="carousel-item">
+                                <ul>
+                                    <li class="nome-cli">Nicole Gomes Melo</li>
+                                    <li class="avaliacao-li">"É claro que o consenso sobre a necessidade de qualificação
+                                        promove a alavancagem do sistema de participação geral."</li>
+                                </ul>
+                            </div>
+                            <div class="carousel-item">
+                                <ul>
+                                    <li class="nome-cli">Ágatha Correia Carvalho</li>
+                                    <li class="avaliacao-li">"Caros amigos, o julgamento imparcial das eventualidades faz
+                                        parte de um processo de gerenciamento das posturas dos órgãos dirigentes com
+                                        relação às suas atribuições."
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="carousel-item">
+                                <ul>
+                                    <li class="nome-cli">Yasmin Silva Lima</li>
+                                    <li class="avaliacao-li">"A nível organizacional, a execução dos pontos do programa
+                                        maximiza as possibilidades por conta das diversas correntes de pensamento."
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="control-btn" onclick="nextSlide()">&gt;</button>
+                </div>
+            </div>
+            </div>
+            </div>
             </div>
         </section>
     </main>
+
+
     <footer>
         <div class="icones">
             <a href="#"><img src="./IMG/instagram.png" alt="Contato Instagram" class="contatos"></a>

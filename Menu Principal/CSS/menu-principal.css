@@ -1,30 +1,23 @@
+
 .menu-principal {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+    
 }
 
 .sobre {
     background-color: rgba(255, 255, 255, 0.562);
     height: 20vh;
     width: 60vw;
+    font-size: 1.2em;
     align-items: center;
     justify-content: center;
     display: flex;
     margin: auto;
     border-radius: 20px;
-}
-
-.cliente {
-    background-color: rgba(255, 255, 255, 0.582);
-    height: 20vh;
-    width: 80vw;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    border-radius: 20px;
-    margin: auto;
-    margin-bottom: 20px;
+    box-shadow: 0px 5px 10px #c5c1bc;
 }
 
 .title-sobre,
@@ -32,3 +25,77 @@
     padding-top: 50px;
     color: rgb(0, 0, 0);
 }
+
+/* Carrosel avaliação */
+
+ul{
+    list-style: none;
+}
+
+.nome-cli{
+    text-align:start;
+}
+.avaliacao-li{
+    text-align: justify;
+    margin-top:2vh;
+    font-size: 0.6em;
+}
+.carrosel-clientes{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.582);
+    height: 20vh;
+    width: 50vw;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    box-shadow: 0px 5px 10px #c5c1bc;
+}
+.carousel-container {
+    overflow: hidden;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+.carousel-controls{
+display: flex;
+gap: 50px;    
+margin-bottom: 20px;
+}
+
+.carrosel-clientes button{
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+        .nome-cli{
+            text-align:start;
+            font-size: 0.8em;
+        }
+
+        .avaliacao-li{
+            text-align:justify;
+            margin-top:2vh;
+            font-size: 0.6em;
+        }
+        .carrosel-clientes{
+            display: flex;
+            background-color: rgba(255, 255, 255, 0.582);
+            height: 30vh;
+            width: 100vw;
+            align-items: center;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+    }
+
