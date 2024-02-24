@@ -1,3 +1,5 @@
+// script hamburguer
+
 const mobileMenu = document.querySelector('.mobile-menu');
 const navBar = document.querySelector('.nav-bar');
 const closeMenu = document.querySelector('.mobile-menu-fechar-x');
@@ -24,3 +26,28 @@ window.addEventListener("scroll", () => {
 });
 
 closeMenu.addEventListener("click", () => navBar.classList.remove('active'));
+
+//script carrosel
+let currentIndex = 0;
+
+function showSlide(index) {
+    const wrapper = document.querySelector('.carousel-wrapper');
+    const itemWidth = document.querySelector('.carousel-item').clientWidth;
+
+    currentIndex = index;
+    wrapper.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+}
+
+function nextSlide() {
+    const totalItems = document.querySelectorAll('.carousel-item').length;
+    currentIndex = (currentIndex + 1) % totalItems;
+    showSlide(currentIndex);
+}
+
+function prevSlide() {
+    const totalItems = document.querySelectorAll('.carousel-item').length;
+    currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+
+    showSlide(currentIndex);
+}
+
