@@ -1,13 +1,17 @@
-
 .menu-principal {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
 }
 
 .sobre {
+    text-align: justify;
+    padding: 2vw;
+    font-size: 0.9em;
+}
+
+.sobre-div {
     background-color: rgba(255, 255, 255, 0.562);
     height: 20vh;
     width: 60vw;
@@ -15,7 +19,6 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    margin: auto;
     border-radius: 20px;
     box-shadow: 0px 5px 10px #c5c1bc;
 }
@@ -26,21 +29,23 @@
     color: rgb(0, 0, 0);
 }
 
-/* Carrosel avaliação */
+/* Carrossel de avaliação */
 
-ul{
+ul {
     list-style: none;
 }
 
-.nome-cli{
-    text-align:start;
+.nome-cli {
+    text-align: start;
 }
-.avaliacao-li{
+
+.avaliacao-li {
     text-align: justify;
-    margin-top:2vh;
+    margin-top: 2vh;
     font-size: 0.6em;
 }
-.carrosel-clientes{
+
+.carrosel-clientes {
     display: flex;
     background-color: rgba(255, 255, 255, 0.582);
     height: 20vh;
@@ -51,6 +56,7 @@ ul{
     font-size: 2em;
     box-shadow: 0px 5px 10px #c5c1bc;
 }
+
 .carousel-container {
     overflow: hidden;
 }
@@ -64,38 +70,120 @@ ul{
     min-width: 100%;
     box-sizing: border-box;
 }
-.carousel-controls{
-display: flex;
-gap: 50px;    
-margin-bottom: 20px;
+
+.carousel-controls {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 20px;
 }
 
-.carrosel-clientes button{
+.carrosel-clientes button {
     background: none;
     border: none;
     font-size: 2em;
     cursor: pointer;
 }
 
-@media (max-width: 900px) {
-        .nome-cli{
-            text-align:start;
-            font-size: 0.8em;
-        }
-
-        .avaliacao-li{
-            text-align:justify;
-            margin-top:2vh;
-            font-size: 0.6em;
-        }
-        .carrosel-clientes{
-            display: flex;
-            background-color: rgba(255, 255, 255, 0.582);
-            height: 30vh;
-            width: 100vw;
-            align-items: center;
-            border-radius: 20px;
-            margin-bottom: 10px;
-        }
+/* Mídia Screen para telas menores (max-width: 900px) */
+@media screen and (max-width: 900px) {
+    .nome-cli {
+        text-align: start;
+        font-size: 0.8em;
     }
 
+    .avaliacao-li {
+        text-align: justify;
+        margin-top: 2vh;
+        font-size: 0.6em;
+    }
+
+    .carrosel-clientes {
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.582);
+        height: 30vh;
+        width: 100vw;
+        align-items: center;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+
+    .sobre-div {
+        width: 80vw;
+    }
+}
+
+/* Mídia Screen para telas muito pequenas (max-width: 600px) */
+@media screen and (max-width: 700px) {
+    body{
+        width: 100vw;
+    }
+    .nome-cli {
+        text-align: start;
+        font-size: 0.8em;
+    }
+    .sobre{
+        font-size: 0.65em;
+    }
+    .sobre-div{
+        height: 30vh;
+        width: 5vw;
+    }
+    .avaliacao-li {
+        text-align: justify;
+        font-size: 0.5em;
+    }
+
+    .nome-cli{
+        margin-top:40px;
+    }
+    .carrosel-clientes {
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.582);
+        height: 30vh;
+        width: 100vw;
+        align-items: center;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+
+    .sobre-div {
+        width: 80vw;
+    }
+}
+@media screen and (max-width: 280px) {
+    body{
+        width: 120vw;
+    }
+    .nome-cli {
+        text-align: start;
+        font-size: 0.8em;
+    }
+    .sobre{
+        font-size: 0.55em;
+    }
+    .sobre-div{
+        height: 30vh;
+        width: 5vw;
+    }
+    .avaliacao-li {
+        text-align: justify;
+        font-size: 0.43em;
+    }
+
+    .nome-cli{
+        margin-top:40px;
+    }
+    .carrosel-clientes {
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.582);
+        height: 30vh;
+        width: 100vw;
+        align-items: center;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+
+    .sobre-div {
+        width: 80vw;
+    }
+}
