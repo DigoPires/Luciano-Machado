@@ -5,10 +5,18 @@
     align-items: center;
 }
 
+.sobre-artista{
+    padding: 20px 0px 60px 0px;
+}
+
+.op-clientes{
+    padding-bottom: 40px;
+}
+
 .sobre {
     text-align: justify;
     padding: 2vw;
-    font-size: 0.9em;
+    font-size: 1.2em;
 }
 
 .sobre-div {
@@ -25,7 +33,6 @@
 
 .title-sobre,
 .avaliacao {
-    padding-top: 50px;
     color: rgb(0, 0, 0);
 }
 
@@ -82,6 +89,12 @@ ul {
     border: none;
     font-size: 2em;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1360px) {
+    .sobre{
+        font-size: 0.8em;
+    }
 }
 
 /* Mídia Screen para telas menores (max-width: 900px) */
