@@ -1,20 +1,20 @@
 .menu-principal {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+}
+
+.sobre-artist, .op-clientes{
 }
 
 .sobre {
     text-align: justify;
-    padding: 2vw;
-    font-size: 0.9em;
+    padding: 1.3vw;
+    font-size: 1.2em;
 }
 
 .sobre-div {
     background-color: rgba(255, 255, 255, 0.562);
-    height: 20vh;
-    width: 60vw;
     font-size: 1.2em;
     align-items: center;
     justify-content: center;
@@ -25,7 +25,7 @@
 
 .title-sobre,
 .avaliacao {
-    padding-top: 50px;
+    font-size: 2.5em;
     color: rgb(0, 0, 0);
 }
 
@@ -48,11 +48,8 @@ ul {
 .carrosel-clientes {
     display: flex;
     background-color: rgba(255, 255, 255, 0.582);
-    height: 20vh;
-    width: 50vw;
     align-items: center;
     border-radius: 20px;
-    margin-bottom: 20px;
     font-size: 2em;
     box-shadow: 0px 5px 10px #c5c1bc;
 }
@@ -73,7 +70,6 @@ ul {
 
 .carousel-controls {
     display: flex;
-    gap: 50px;
     margin-bottom: 20px;
 }
 
@@ -81,7 +77,14 @@ ul {
     background: none;
     border: none;
     font-size: 2em;
+    padding: 20px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1360px) {
+    .sobre{
+        font-size: 1em;
+    }
 }
 
 /* Mídia Screen para telas menores (max-width: 900px) */
@@ -100,16 +103,10 @@ ul {
     .carrosel-clientes {
         display: flex;
         background-color: rgba(255, 255, 255, 0.582);
-        height: 30vh;
-        width: 100vw;
         align-items: center;
         border-radius: 20px;
-        margin-bottom: 10px;
     }
 
-    .sobre-div {
-        width: 80vw;
-    }
 }
 
 /* Mídia Screen para telas muito pequenas (max-width: 600px) */
@@ -122,7 +119,7 @@ ul {
         font-size: 0.8em;
     }
     .sobre{
-        font-size: 0.65em;
+        font-size: 0.8em;
     }
     .sobre-div{
         height: 30vh;
