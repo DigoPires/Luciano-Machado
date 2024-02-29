@@ -22,7 +22,7 @@ document.addEventListener('scroll', () => { //bloqueia o scroll quando aberto a 
 
 window.addEventListener("scroll", () => {
     let header = document.querySelector("#header");
-    header.classList.toggle("rolagem", window.scrollY > 50);
+    header.classList.toggle("rolagem", window.scrollY > 20);
 });
 
 closeMenu.addEventListener("click", () => navBar.classList.remove('active'));
