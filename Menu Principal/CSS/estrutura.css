@@ -6,6 +6,9 @@
 .logo-container{
     display: none;
 }
+.inicio{
+    cursor: pointer;
+}
 
 *{
     margin: 0;
