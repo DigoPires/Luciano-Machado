@@ -129,9 +129,6 @@ ul {
 
 /* Mídia Screen para telas muito pequenas (max-width: 600px) */
 @media screen and (max-width: 700px) {
-    body{
-        width: 100vw;
-    }
     .nome-cli {
         text-align: start;
         font-size: 0.8vw;
@@ -164,9 +161,6 @@ ul {
     }
 }
 @media screen and (max-width: 280px) {
-    body{
-        width: 120vw;
-    }
     .nome-cli {
         text-align: start;
         font-size: 0.8em;
@@ -189,11 +183,9 @@ ul {
     .carrosel-clientes {
         display: flex;
         background-color: rgba(255, 255, 255, 0.582);
-        height: 30vh;
-        width: 100vw;
+        width: 80vw;
         align-items: center;
         border-radius: 20px;
-        margin-bottom: 10px;
     }
 
     .sobre-div {
