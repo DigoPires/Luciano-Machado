@@ -122,7 +122,6 @@ header {
 /* Icones dos contatos */
 .icones {
     display:flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 50px;
@@ -292,10 +291,6 @@ footer {
         color: #BBA154;
     }
 
-    .icones {
-        gap: 39px;
-    }
-
     .icones-img{
         width: 4vh;
     }
@@ -308,7 +303,6 @@ footer {
     .logo-container{
         display: flex;
         padding-right: 0%;
-        padding-left: 55%;
     }
     
     
@@ -340,8 +334,12 @@ footer {
         font-size:25px;
     }
 
-    .icones {
-        gap: 40px;
+    .icones-img{
+        width: 3vh;
+    }
+
+    .icones{
+        gap: 10px;
     }
 }
 
