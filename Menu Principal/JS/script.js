@@ -35,9 +35,15 @@ closeMenu.addEventListener("click", () => navBar.classList.remove('active'));
 //     navBar.classList.remove('active')
 // }
 
+
+
+// fechar ao clicar fora da nav-bar
 logo.addEventListener("click", () => navBar.classList.remove('active'));
 menu.addEventListener("click", () => navBar.classList.remove('active'));
 footer.addEventListener("click", () => navBar.classList.remove('active'));
+
+
+
 
 //script carrosel
 let currentIndex = 0;
