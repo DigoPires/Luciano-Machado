@@ -121,10 +121,12 @@ header {
 
 /* Icones dos contatos */
 .icones {
-    display: flex;
-    justify-content:center;
-    padding: 20px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 50px;
+    padding: 20px;
 }
 
 .icones-img{
@@ -151,11 +153,11 @@ header {
     margin: 8px;
     border-radius: 10px;
 }
-
-footer{
+footer {
+    position: fixed;
+    bottom: 0;
     display: flex;
     flex-direction: column;
-    background-color: #FFF9E6;
     width: 100%;
 }
 
@@ -168,21 +170,8 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
 /* responsividade */
 @media (max-width: 900px) {
-
-    body {
-        overflow-x: hidden;
-    }
-
     .logo-container{
         display: flex;
         padding-right: 40%;
@@ -289,7 +278,7 @@ footer{
     .nav-bar button{
         background-color: #fae2c2;
         border-color: #000000;
-        width: 30vw;
+        width: 40vw;
         height: 8vh;
         font-size: 1.2em;
     }
@@ -303,9 +292,15 @@ footer{
         color: #BBA154;
     }
 
-    footer{
-        position: relative;
+    .icones {
+        gap: 39px;
     }
+
+    .icones-img{
+        width: 4vh;
+    }
+    
+
 }
 
 @media (max-width: 600px) {
@@ -315,23 +310,19 @@ footer{
         padding-right: 0%;
         padding-left: 55%;
     }
-
+    
+    
     .flex-mobile{
         display: flex;
-        justify-content: space-between;
     }
 
-    /* .nav-bar button{
+    .nav-bar button{
         background-color: #fae2c2;
         border-color: #000000;
         width: 25vw;
         height: 7vh;
-        font-size: 1em;
-    } */
-
-    /* .ancora{
-        font-size: 1.6em;
-    } */
+        font-size: 3.5vw;
+    }
 
     .logo img{
         width: 40vw;
@@ -342,3 +333,15 @@ footer{
     }
 
 }
+
+@media (max-width: 380px){
+
+    .nav-bar p{
+        font-size:25px;
+    }
+
+    .icones {
+        gap: 40px;
+    }
+}
+
