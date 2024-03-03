@@ -10,6 +10,36 @@
     cursor: pointer;
 }
 
+.restrita{
+    display: none;
+    align-items: center;
+}
+::-webkit-input-placeholder {
+    color: black;
+}
+
+input{
+    text-align: center;
+    margin: 10px;
+    background-color: #BF9F70;
+    border: none;
+    outline: unset;
+    border-radius: 10px;
+    color: black;
+    width: 10vw;
+    height: 2vh;
+    box-shadow: 0px 4px 5px rgba(53, 53, 53, 0.75);
+}
+
+.entrar{
+    width: 5vw;
+    background: #dfbf96;
+}
+.entrar:hover{
+    cursor: pointer;
+    background:#a37c49;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -174,6 +204,23 @@ footer {
 
 /* responsividade */
 @media (max-width: 900px) {
+    input{
+        text-align: center;
+        margin: 10px;
+        background-color: #f0dec4;
+        border: none;
+        outline: unset;
+        border-radius: 10px;
+        color: black;
+        width: 20vw;
+        height: 3vh;
+        box-shadow: 0px 4px 5px rgba(53, 53, 53, 0.75);
+    }
+    
+    .entrar{
+        width: 10vw;
+    }
+
     .logo-container{
         display: flex;
         padding-right: 40%;
@@ -280,8 +327,8 @@ footer {
     .nav-bar button{
         background-color: #fae2c2;
         border-color: #000000;
-        width: 40vw;
-        height: 8vh;
+        width: 30vw;
+        height: 5vh;
         font-size: 1.2em;
     }
 
@@ -316,9 +363,9 @@ footer {
     .nav-bar button{
         background-color: #fae2c2;
         border-color: #000000;
-        width: 25vw;
-        height: 7vh;
-        font-size: 3.5vw;
+        width: 30vw;
+        height: 5vh;
+        font-size: 3vw;
     }
 
     .logo img{
@@ -332,7 +379,19 @@ footer {
 }
 
 @media (max-width: 380px){
+    input{
+        width: 30vw;
+        height: 3vh;
+    }
+    
+    .entrar{
+        width: 20vw;
+        height: 2vh;
+    }
 
+    .nav-bar button{
+        font-size: 4.5vw;
+    }
     .nav-bar p{
         font-size:25px;
     }
