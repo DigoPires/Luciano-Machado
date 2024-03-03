@@ -1,5 +1,4 @@
 // script hamburguer
-
 const mobileMenu = document.querySelector('.mobile-menu');
 const navBar = document.querySelector('.nav-bar');
 const closeMenu = document.querySelector('.mobile-menu-fechar-x');
@@ -43,6 +42,18 @@ menu.addEventListener("click", () => navBar.classList.remove('active'));
 footer.addEventListener("click", () => navBar.classList.remove('active'));
 
 
+//tentando criar função pra abrir e fechar area-restrita
+let btn = document.querySelector('.area-restrita')
+let form = document.querySelector('.restrita');
+
+btn.addEventListener('click', function() {
+    if(form.style.display != 'flex'){
+    form.style.display = 'flex';
+    form.style.flexDirection ='column';
+    return;
+    }
+    form.style.display = 'none'
+});
 
 
 //script carrosel
