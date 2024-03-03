@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
+
 :root {
     --gold: #ebe2b5;
 }
@@ -17,17 +18,20 @@
 ::-webkit-input-placeholder {
     color: black;
 }
-
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+    }
+    
 input{
     text-align: center;
     margin: 10px;
-    background-color: #BF9F70;
+    background-color: #e9dcc9;
     border: none;
     outline: unset;
-    border-radius: 10px;
+    border-radius: 5px;
     color: black;
     width: 10vw;
-    height: 2vh;
+    height: 2.5vh;
     box-shadow: 0px 4px 5px rgba(53, 53, 53, 0.75);
 }
 
@@ -52,17 +56,15 @@ body {
     margin: 0;
     text-align: center;
     overflow-x: hidden;
-    background-color: #FFF9E6;
+    background-image: url(../IMG/backgrounds/background-teste-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 section {
     margin-top: 0;
     padding: 30px;
-    background-color: #FFF9E6;
-    background-image: url(../IMG/backgrounds/background-teste-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 header {
@@ -70,11 +72,11 @@ header {
     z-index: 999;
     width: 100%;
     background-color: #FFF9E6;
-    box-shadow: 0px 2px 10px rgba(53, 53, 53, 0.75);
 }
 
 .rolagem {
     position: sticky;
+    box-shadow: 0px 2px 10px rgba(53, 53, 53, 0.75);
 }
 
 /* Design dos botões */
@@ -89,6 +91,7 @@ header {
     height: 5vh;
     width: 10vw;
     color: black;
+    transition:all 0.7s;
 }
 .ancora:hover {
     color: white;
@@ -143,12 +146,14 @@ header {
     border-radius: 50px;
     font-size: 1vw;
     font-weight: bold;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .nav-bar button:hover{
     cursor: pointer;
-    color: white;
-    background: linear-gradient(0.75turn, #b89568, #F1E5A8);
+    background: linear-gradient(0.25turn,#e9d1b1, #eee2a8 );
+    box-shadow: 0px 8px 15px #7a6447;
+    transform: scale(1.05);
 }
 
 
@@ -158,19 +163,17 @@ header {
     align-items: center;
     justify-content: center;
     gap: 50px;
-    padding: 20px;
+    margin: 20px;
 }
 
 .icones-img{
-    width: 6vh
+    width: 5vh
 }
 
-.contatos {
-    height: 5.5vh;
-}
+
 .copyright-div{
     /* margin-top: 50px; */
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 /* criando o hamburguer menu */
 .mobile-menu {
@@ -186,11 +189,14 @@ header {
     border-radius: 10px;
 }
 footer {
-    position: fixed;
+    position:sticky;
     bottom: 0;
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding-top:5px;
+    padding-bottom: 13px;
+    background-color: #FFF9E6;
 }
 
 
@@ -240,6 +246,7 @@ footer {
         font-size: 1.8em;
         box-shadow: unset;
         margin: 10px;
+        transition:none;
     }
 
     .menu{
@@ -332,17 +339,17 @@ footer {
         font-size: 1.2em;
     }
 
-    .nav-bar button:hover{
-        background-color: #968166;
-        color: white;
-    }
-
     .nav-bar button > p{    
         color: #BBA154;
     }
 
     .icones-img{
         width: 4vh;
+    }
+
+    footer{
+        position: sticky;
+        margin-top: 20px;
     }
     
 
@@ -375,6 +382,9 @@ footer {
     .copyright-div{
         font-size: 1.0em;
     }
+    footer{
+        padding-bottom: 40px;
+    }
 
 }
 
@@ -402,6 +412,10 @@ footer {
 
     .icones{
         gap: 10px;
+    }
+
+    footer{
+        padding-bottom: 50px;
     }
 }
 
