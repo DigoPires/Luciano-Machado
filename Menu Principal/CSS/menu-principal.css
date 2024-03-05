@@ -126,7 +126,7 @@ ul {
 @media screen and (max-width: 700px) {
     .nome-cli {
         text-align: start;
-        font-size: 0.8vw;
+        /* font-size: 0.8vw; */
     }
     .sobre{
         font-size: 1em;
@@ -141,6 +141,8 @@ ul {
         width: 80vw;
         align-items: center;
         border-radius: 15px;
+        font-size: 1.6em;
+        padding: 1vh ;
     }
 
     .sobre-div {
