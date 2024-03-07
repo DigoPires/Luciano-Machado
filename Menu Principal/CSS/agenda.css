@@ -1,0 +1,17 @@
+h1{
+    font-size: 4vw;
+    padding: 0px 0px 20px 0px;
+}
+
+h2{
+    font-size: 2.5vw;
+}
+
+.titulo-menu{
+    background-image: url(../IMG/banda_casamento.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 3vw;
+}
