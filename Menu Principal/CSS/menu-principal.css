@@ -1,0 +1,187 @@
+body{
+    background-image: url(../IMG/backgrounds/background-teste-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 70vh;
+}
+
+.sobre {
+    text-align: justify;
+    padding: 1.4vw;
+    font-size: 1.2vw;
+}
+
+.sobre-div {
+    background-color: rgba(255, 255, 255, 0.562);
+    width: 60vw;
+    font-size: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px #c5c1bc;
+}
+
+.title-sobre,
+.avaliacao {
+    font-size: 2.2vw;
+}
+
+/* Carrossel de avaliação */
+ul {
+    list-style: none;
+}
+
+.nome-cli {
+    text-align: start;
+}
+
+.avaliacao-li {
+    text-align: justify;
+    margin-top: 2vh;
+    font-size: 1vw;
+}
+
+.carrosel-clientes {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.582);
+    align-items: center;
+    border-radius: 15px;
+    font-size: 1vw;
+    box-shadow: 0px 5px 10px #c5c1bc;
+    width: 50vw;
+}
+
+.carousel-container {
+    overflow: hidden;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-controls {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.carrosel-clientes button {
+    background: none;
+    border: none;
+    font-size: 2vw;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* Mídia Screen para telas menores (max-width: 900px) */
+@media screen and (max-width: 900px) {
+
+    .nome-cli {
+        text-align: start;
+        font-size: 4vw;
+    }
+    .sobre-div{
+        width: 80vw;
+    }
+    .sobre{
+        font-size: 2.5vw;
+    }
+
+    .sobre-artista, .op-clientes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .avaliacao-li {
+        text-align: justify;
+        margin-top: 2vh;
+        font-size: 3vw;
+    }
+
+    .carrosel-clientes {
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.582);
+        align-items: center;
+        border-radius: 15px;
+        width: 80vw;
+    }
+
+    .title-sobre,
+    .avaliacao {
+        font-size: 4vw;
+    }
+
+}
+
+/* Mídia Screen para telas muito pequenas (max-width: 600px) */
+@media screen and (max-width: 700px) {
+    .nome-cli {
+        text-align: start;
+        /* font-size: 0.8vw; */
+    }
+    .sobre{
+        font-size: 1em;
+    }
+    .avaliacao-li {
+        text-align: justify;
+        font-size: 0.5em;
+    }
+    .carrosel-clientes {
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.582);
+        width: 80vw;
+        align-items: center;
+        border-radius: 15px;
+        font-size: 1.6em;
+        padding: 1vh ;
+    }
+
+    .sobre-div {
+        width: 80vw;
+    }
+}
+@media screen and (max-width: 281px) {
+
+    .nome-cli {
+        text-align: start;
+        font-size: 6vw;
+    }
+    .sobre{
+        font-size: 3.4vw;
+    }
+    .sobre-div{
+        width: 5vw;
+    }
+    .avaliacao-li {
+        text-align: justify;
+        font-size: 4vw;
+    }
+
+    .carrosel-clientes {
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.582);
+        width: 100vw;
+        align-items: center;
+        border-radius: 15px;
+    }
+
+    .sobre-div {
+        width: 90vw;
+    }
+}
