@@ -30,10 +30,6 @@ window.addEventListener("scroll", () => {
 
 closeMenu.addEventListener("click", () => navBar.classList.remove('active'));
 
-// if(navBar.addEventListener("click")){
-//     navBar.classList.remove('active')
-// }
-
 
 
 // fechar ao clicar fora da nav-bar
