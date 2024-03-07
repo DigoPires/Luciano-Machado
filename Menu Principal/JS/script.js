@@ -5,8 +5,8 @@ const closeMenu = document.querySelector('.mobile-menu-fechar-x');
 const activeClass = 'active';
 
 const logo = document.querySelector(".logo-container");
-const menu = document.querySelector(".menu-principal");
-const footer = document.querySelector(".footer");
+const menu = document.querySelector("main");
+const footer = document.querySelector("footer");
 
 function setTopo(){
     let static = window.pageYoffset
