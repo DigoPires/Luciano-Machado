@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
-body{
+body {
     font-family: 'Questrial', sans-serif;
     height: 100vh;
     margin: 0;
@@ -8,32 +8,204 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background:linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.568)), url(../IMG/logos/logo-branca-fundo-gold.png);
+    font-weight: bold;
+    background-position: center;
 }
 
-.sair{
+label {
+    font-size: 1.3em;
+}
+
+.sair {
     margin-top: 20px;
 }
 
-.add_show{
-    width: 20vw;
-    border: 2px solid black;
+.add_show {
+    background-color: #ebe2b5;
+    width: 15vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 4px 5px rgba(53, 53, 53, 0.75);
+    border-radius: 10px;
     align-items: center;
 }
 
-.add_show input{
-    margin: 10px;
+.add_show label{
+    padding: 4px;
+}
+
+.add_show button {
+    margin-bottom:15px ;
+    background: linear-gradient(0.25turn, #b89568, #F1E5A8);
+    border: 1px solid black;
+    box-shadow: 0px 2px 5px #7e7566;
+    width: 8vw;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.add_show button:hover {
+    cursor: pointer;
+    background: linear-gradient(0.25turn, #e9d1b1, #eee2a8);
+    box-shadow: 0px 5px 5px #7a6447;
+    transform: scale(1.01);
+}
+
+.sair {
+    background: linear-gradient(0.25turn, #b89568, #F1E5A8);
+    border: 1px solid black;
+    width: 4vw;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.sair:hover {
+    background: linear-gradient(0.25turn, #e9d1b1, #eee2a8);
+    box-shadow: 0px 5px 6px #7a6447;
+    transform: scale(1.01);
+}
+
+.add_show input {
+    width: 10vw;
+    margin: 20px;
+    font-size: 1.2em;
     text-align: center;
-    display: flex;
-    justify-content:center;
-    align-items: center;
+    border: none;
+    outline: unset;
+    border-radius: 5px;
+    background-color: rgb(243, 242, 242);
+    width: 10vw;
+    box-shadow: 0px 2px 10px #7e7566;
 }
 
-.shows-existentes{
-    border: 2px solid black;
+.shows-existentes {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 50px;
     width: 20vw;
+    background-color: #ebe2b5;
+    box-shadow: 0px 4px 5px rgba(53, 53, 53, 0.75);
+    border-radius: 10px;
+}
+
+.shows-existentes button {
+    background: linear-gradient(0.25turn, #b89568, #F1E5A8);
+    border: 1px solid black;
+    width: 4vw;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.shows-existentes button:hover {
+    background: linear-gradient(0.25turn, #e9d1b1, #eee2a8);
+    box-shadow: 0px 2px 4px #000000;
+}
+
+/* RESPONSIVO */
+@media screen and (max-width: 1024px) {
+
+    .add_show {
+        width: 30vw;
+    }
+
+    .add_show button {
+        width: 16vw;
+    }
+
+    .sair,
+    .shows-existentes button {
+        width: 8vw;
+    }
+
+    .add_show input {
+        width: 18vw;
+        font-size: 1.2em;
+    }
+
+    .shows-existentes {
+        width: 50vw;
+    }
+}
+@media screen and (max-width: 768px) {
+
+    .add_show {
+        width: 40vw;
+    }
+
+    .add_show button {
+        width: 20vw;
+    }
+
+    .sair,
+    .shows-existentes button {
+        width: 20vw;
+    }
+
+    .add_show input {
+        width: 20vw;
+        font-size: 1.2em;
+    }
+
+    .shows-existentes {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .add_show {
+        width: 60vw;
+    }
+
+    .add_show button {
+        width: 30vw;
+        font-size: 1em;
+    }
+
+    .sair,
+    .shows-existentes button {
+        width: 20vw;
+    }
+
+    .add_show input {
+        width: 40vw;
+    }
+
+    .shows-existentes {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    .add_show {
+        width: 80vw;
+    }
+
+    .add_show button {
+        width: 40vw;
+    }
+
+    .sair,
+    .shows-existentes button {
+        width: 20vw;
+    }
+
+    .add_show input {
+        width: 50vw;
+    }
+
+    .shows-existentes {
+        width: 80vw;
+    }
 }
