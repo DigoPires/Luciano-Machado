@@ -5,6 +5,11 @@ body{
     background-position: center;
 }
 
+section {
+    margin-top: 0;
+    padding: 30px;
+}
+
 .menu-principal {
     display: flex;
     flex-direction: column;
