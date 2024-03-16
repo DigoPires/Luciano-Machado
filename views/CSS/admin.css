@@ -11,6 +11,7 @@ body {
     background:linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.568)), url(../IMG/logos/logo-branca-fundo-gold.png);
     font-weight: bold;
     background-position: center;
+    background-attachment: fixed;
 }
 
 label {
@@ -72,7 +73,20 @@ label {
     transform: scale(1.01);
 }
 
-.add_show input {
+.add_show input{
+    width: 10vw;
+    margin: 20px;
+    font-size: 1em;
+    text-align: center;
+    border: none;
+    outline: unset;
+    border-radius: 5px;
+    background-color: rgb(243, 242, 242);
+    width: 10vw;
+    box-shadow: 0px 2px 10px #7e7566;
+}
+
+.local{
     width: 10vw;
     margin: 20px;
     font-size: 1em;
@@ -87,12 +101,28 @@ label {
 
 .shows-existentes {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 20vw;
+}
+
+.show {
+    display: flex;
+    justify-content: space-between;
     background-color: #ebe2b5;
     box-shadow: 0px 4px 5px rgba(53, 53, 53, 0.75);
     border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.lista-shows {
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-shows div {
+    margin-bottom: 5px;
 }
 
 .shows-existentes button {
@@ -100,7 +130,7 @@ label {
     border: 1px solid black;
     margin: 20px;
     border-radius: 5px;
-    font-size: 1vw;
+    font-size: 1em;
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
@@ -124,7 +154,7 @@ label {
     }
 
     .sair,
-    .shows-existentes button {
+    .show button {
         width: 8vw;
         font-size: 0.8em;
     }
@@ -134,10 +164,11 @@ label {
         font-size: 1.2em;
     }
 
-    .shows-existentes {
+    .shows {
         width: 50vw;
     }
 }
+
 @media screen and (max-width: 768px) {
 
     .add_show {
@@ -149,7 +180,7 @@ label {
     }
 
     .sair,
-    .shows-existentes button {
+    .show button {
         width: 10vw;
     }
 
@@ -158,11 +189,12 @@ label {
         font-size: 1.2em;
     }
 
-    .shows-existentes {
-        width: 50vw;
+    .shows {
+        width: 60vw;
     }
 }
-@media screen and (max-width: 570px) {
+
+@media screen and (max-width: 587px) {
     .add_show {
         width: 60vw;
     }
@@ -173,16 +205,16 @@ label {
     }
 
     .sair,
-    .shows-existentes button {
-        width: 20vw;
+    .show button {
+        width: 15vw;
     }
 
     .add_show input {
         width: 40vw;
     }
 
-    .shows-existentes {
-        width: 80vw;
+    .shows {
+        width: 20vw;
     }
 }
 
@@ -197,7 +229,7 @@ label {
     }
 
     .sair,
-    .shows-existentes button {
+    .show button {
         width: 20vw;
     }
 
@@ -205,8 +237,18 @@ label {
         width: 40vw;
     }
 
-    .shows-existentes {
+    .shows {
         width: 80vw;
+    }
+    .local{
+        width: 20vw;
+    }
+}
+@media screen and (max-width: 391px) {
+    .show{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     }
 }
 
@@ -224,7 +266,7 @@ label {
     }
 
     .sair,
-    .shows-existentes button {
+    .show button {
         width: 25vw;
         font-size: 0.8em;
     }
@@ -233,16 +275,19 @@ label {
         width: 50vw;
     }
 
-    .shows-existentes {
+    .shows {
         width: 80vw;
     }
-}
 
+    .local{
+        width: 20vw;
+    }
+}
 
 @media screen and (max-width:200px) {
 
     .add_show {
-        width: 90vw;
+        width: 100vw;
     }
 
     .add_show button {
@@ -250,16 +295,22 @@ label {
     }
 
     .sair,
-    .shows-existentes button {
+    .show button {
         width: 30vw;
         font-size: 0.8em;
     }
 
     .add_show input {
-        width: 50vw;
+        width: 60vw;
     }
 
-    .shows-existentes {
-        width: 90vw;
+    .shows {
+        width:30vw;
     }
+
+    .show button {
+        display: flex;
+        flex-direction: column;
+    }
+
 }

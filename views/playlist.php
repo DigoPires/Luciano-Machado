@@ -43,10 +43,10 @@
                             <p>Agenda</p>
                         </a></li>
                     <li><button class="area-restrita">Área Restrita</button></li>
-                    <form class="restrita" actton="controllers/login.php"  method="POST">
+                    <form class="restrita" action="../controllers/login.php" method="POST">
                         <input class="restrita-input" type="text" placeholder="Login" name="login">
                         <input class="restrita-input" type="password" placeholder="Senha" name="senha">
-                        <input class="entrar" type="submit" value="Entrar">
+                        <input class="entrar" type="submit" value="Entrar" name="submit">
                     </form>
                 </ul>
             </nav>
