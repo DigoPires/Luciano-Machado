@@ -109,9 +109,11 @@ if (!isset ($_SESSION['login']) || empty ($_SESSION['login'])) {
                 <button type="button" class="excluir" onclick="confirmarExclusao(<?php echo $dados['cod_Agenda']; ?>)">Excluir</button>
                 
                 <!-- BOTÃO DE EDITAR -->
-                <button class="editar">Editar</button>
             </form>
-
+            <form action="../views/alterar.php" method="GET">
+                <input type="hidden" name="cod_Agenda" value="<?php echo $dados['cod_Agenda']; ?>">
+                <button type="submit" class="editar">Editar</button>
+            </form>
         </div>
         <?php
     }
