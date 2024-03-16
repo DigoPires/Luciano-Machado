@@ -124,6 +124,7 @@
                     class="contatos"></a>
             <a href="#"> <img class="icones-img" src="./views/IMG/icones/gmail.png" alt="Contato Gmail" class="contatos"></a>
         </div>
+        <!-- teste -->
         <div class="copyright-div">Design by Alan, Jefferson, Julia, Rodrigo e Ryan - 2024&copy;</div>
     </footer>
 
