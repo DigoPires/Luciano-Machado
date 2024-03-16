@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
             mensagem.remove();
             Swal.fire({
                 title: 'Sucesso',
-                text: 'O show foi adcionado a agenda com sucesso!',
+                text: 'O show foi adcionado ou alterado com sucesso!',
                 icon: 'success',
                 timer: 3000,
                 showConfirmButton: false,
@@ -47,5 +47,11 @@ function confirmarExclusao(codAgenda) {
         }
     });
 }
+
+// redefinindo função para botão de editar o show
+function editarShow(codAgenda) {
+    window.location.href = "./alterar.php?cod_Agenda=" + codAgenda;
+}
+
 
 

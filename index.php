@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -54,6 +58,14 @@
                     </form>
                 </ul>
             </nav>
+                    <div class="error-message">
+                        <?php
+                        if (isset($_SESSION['login_error'])) {
+                            echo $_SESSION['login_error'];
+                            unset($_SESSION['login_error']);
+                        }
+                        ?>
+                    </div>
         </div>
     </header>
 
@@ -131,6 +143,8 @@
     <script src="./views/JS/navBar.js"></script>
     <script src="./views/JS/carrossel.js"></script>
     <script src="./views/JS/areaRestrita.js"></script>
+
+    
 </body>
 
 </html>
