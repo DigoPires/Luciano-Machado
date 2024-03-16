@@ -58,15 +58,15 @@ session_start();
                     </form>
                 </ul>
             </nav>
-                    <div class="error-message">
-                        <?php
-                        if (isset($_SESSION['login_error'])) {
-                            echo $_SESSION['login_error'];
-                            unset($_SESSION['login_error']);
-                        }
-                        ?>
-                    </div>
         </div>
+            <div class="error-message">
+                <?php
+                if (isset($_SESSION['login_error'])) {
+                echo $_SESSION['login_error'];
+                unset($_SESSION['login_error']);
+                }
+                ?>
+            </div>
     </header>
 
     <main>
