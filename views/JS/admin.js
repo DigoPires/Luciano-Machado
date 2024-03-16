@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // ALERTA PARA EXCLUSÃO DE SHOW
-// ALERTA PARA EXCLUSÃO DE SHOW
 function confirmarExclusao(codAgenda) {
     Swal.fire({
         title: 'Tem certeza?',
