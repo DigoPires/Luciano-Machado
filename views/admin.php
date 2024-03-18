@@ -103,6 +103,7 @@ if (!isset ($_SESSION['login']) || empty ($_SESSION['login'])) {
                 </div>
 
                 <!-- BOTÃO DE EXCLUIR O SHOW -->
+                
                 <form id="form-excluir-<?php echo $dados['cod_Agenda']; ?>" action="../controllers/excluirShow.php" method="POST">
                     <input type="hidden" name="excluir">
                     <input type="hidden" name="cod_Agenda" value="<?php echo $dados['cod_Agenda']; ?>">
