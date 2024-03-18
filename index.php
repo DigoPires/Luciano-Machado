@@ -24,7 +24,7 @@ session_start();
             </div> <!-- mobile-menu -->
             <div class="logo-container">
                 <div class="logo">
-                    <img src="./views/IMG/logos/logo-preta-png.png" alt="Logo">
+                <a href="./index.php" class="inicio"><img src="./views/IMG/logos/logo-preta-png.png" alt="Logo"></a>
                 </div>
             </div>
         </div> <!-- flex-mobile -->
