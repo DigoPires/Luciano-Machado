@@ -1,24 +1,57 @@
-/* body{
-    background:linear-gradient(rgba(47, 15, 226, 0.308), rgba(141, 121, 31, 0.568)), url(/IMG/backgrounds/background-teste.jpg);
-    height: 100vh;
-} */
-
-.carousel-inner{
-    height: 50vh;
-    width: 45vw;
-    display: flex;
-    align-items: center;
-}
-
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 main{
     display: flex;
     justify-content: center;
-
 }
+
+.carousel-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-container h1 {
+    margin: 20px
+     
+}
+.carousel {
+    overflow: hidden;
+    position: relative; /* Para alinhar os botões de navegação */
+}
+.carousel ul {
+    list-style: none;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carousel li {
+    flex: 0 0 100%; /* Isso aqui é para ocupar a largura total do container*/
+}
+.carousel img {
+    width: 100%; /* pras imagem ficar dentro da div certinho e não ficar cortando*/
+}
+
+.carousel-1 {
+    max-width: 50vw; /* Largura máxima do primeiro carrossel */
+}
+.carousel-2 {
+    max-width: 50vw; /* Largura máxima do segundo carrossel */
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 5px;
+}
+
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+
+.carousel-container .prev, .carousel-container .next {
+    background-color: transparent; /* Remove o fundo branco */
+    border: none; /* Remove a borda */
+    color: brown;}
