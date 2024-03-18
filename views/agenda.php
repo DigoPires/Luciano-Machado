@@ -1,3 +1,7 @@
+<?php
+include_once ('../models/conexao.php');
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -59,15 +63,27 @@
         <section class="agenda">
             <div class="titulo-menu">
                 <h1>Agenda</h1>
-                <h2>Próximos Shows</h2>
-            </div>
-            <div class="estrutura-show">
-                <input type="text">
             </div>
 
-            <div>
-                <p>Data</p>
-                <input type="text" name="ti" >
+            <h2>Próximos Shows</h2>
+            <div class="shows-existentes">
+                <?php
+                $sql = "SELECT cod_Agenda, DATE_FORMAT(data_Show, '%d/%m/%Y') AS data, estado, cidade FROM tb_agenda";
+                $resultado = mysqli_query($conexao, $sql);
+
+                while ($dados = mysqli_fetch_array($resultado)) {
+                ?>
+            <!-- LISTA DE SHOWS NO SELECT DO BANCO -->
+                        <div class="show">
+                        <div class="lista-shows">
+                            <div>Data: <?php echo $dados['data']; ?></div>
+                            <div>Estado: <?php echo $dados['estado']; ?></div>
+                            <div>Cidade: <?php echo $dados['cidade']; ?></div>
+                        </div>  
+                    </div>
+                    <?php
+                    }
+                    ?>
             </div>
         </section>
     </main>
