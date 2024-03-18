@@ -83,42 +83,42 @@ if (!isset ($_SESSION['login']) || empty ($_SESSION['login'])) {
         </div>
     </div>
 
-    <h2>Shows Existentes</h2>
+    <h2 class="title-show-existente">Shows Existentes</h2>
     <div class="shows-existentes">
 
     <!-- PHP PARA O SELECT -->
     <div class="shows-existentes">
-    <?php
-    $sql = "SELECT cod_Agenda, DATE_FORMAT(data_Show, '%d/%m/%Y') AS data, estado, cidade FROM tb_agenda";
-    $resultado = mysqli_query($conexao, $sql);
-
-    while ($dados = mysqli_fetch_array($resultado)) {
-        ?>
-<!-- LISTA DE SHOWS NO SELECT DO BANCO -->
-            <div class="show">
-            <div class="lista-shows">
-                <div>Data: <?php echo $dados['data']; ?></div>
-                <div>Estado: <?php echo $dados['estado']; ?></div>
-                <div>Cidade: <?php echo $dados['cidade']; ?></div>
-            </div>
-
-            <!-- BOTÃO DE EXCLUIR O SHOW -->
-            <form id="form-excluir-<?php echo $dados['cod_Agenda']; ?>" action="../controllers/excluirShow.php" method="POST">
-                <input type="hidden" name="excluir">
-                <input type="hidden" name="cod_Agenda" value="<?php echo $dados['cod_Agenda']; ?>">
-                <button type="button" class="excluir" onclick="confirmarExclusao(<?php echo $dados['cod_Agenda']; ?>)">Excluir</button>
-                
-                <!-- BOTÃO DE EDITAR -->
-            </form>
-            <form action="../views/alterar.php" method="GET">
-                <input type="hidden" name="cod_Agenda" value="<?php echo $dados['cod_Agenda']; ?>">
-                <button type="submit" class="editar">Editar</button>
-            </form>
-        </div>
         <?php
-    }
-    ?>
-</div>
+        $sql = "SELECT cod_Agenda, DATE_FORMAT(data_Show, '%d/%m/%Y') AS data, estado, cidade FROM tb_agenda";
+        $resultado = mysqli_query($conexao, $sql);
+
+        while ($dados = mysqli_fetch_array($resultado)) {
+            ?>
+    <!-- LISTA DE SHOWS NO SELECT DO BANCO -->
+                <div class="show">
+                <div class="lista-shows">
+                    <div>Data: <?php echo $dados['data']; ?></div>
+                    <div>Estado: <?php echo $dados['estado']; ?></div>
+                    <div>Cidade: <?php echo $dados['cidade']; ?></div>
+                </div>
+
+                <!-- BOTÃO DE EXCLUIR O SHOW -->
+                <form id="form-excluir-<?php echo $dados['cod_Agenda']; ?>" action="../controllers/excluirShow.php" method="POST">
+                    <input type="hidden" name="excluir">
+                    <input type="hidden" name="cod_Agenda" value="<?php echo $dados['cod_Agenda']; ?>">
+                    <button type="button" class="excluir" onclick="confirmarExclusao(<?php echo $dados['cod_Agenda']; ?>)">Excluir</button>
+                    
+                    <!-- BOTÃO DE EDITAR -->
+                </form>
+                <form action="../views/alterar.php" method="GET">
+                    <input type="hidden" name="cod_Agenda" value="<?php echo $dados['cod_Agenda']; ?>">
+                    <button type="submit" class="editar">Editar</button>
+                </form>
+            </div>
+            <?php
+            }
+            ?>
+    </div>
 
 
 <script src="./JS/admin.js"></script>
