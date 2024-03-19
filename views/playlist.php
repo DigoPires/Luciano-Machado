@@ -55,9 +55,12 @@
     </header>
 
     <main>
-        <section class="agenda">
+        <section class="agenda"></section>
+
+        <img src="./IMG/icones/deezer-logo.svg" alt="Deezer Logo" width="200" height="200">
+        <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/playlist/11253390324" width="95%" height="420" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+            <br><br><br>
             
-        </section>
     </main>
 
     <footer class="footer">
