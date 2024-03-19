@@ -84,8 +84,7 @@ if (!isset ($_SESSION['login']) || empty ($_SESSION['login'])) {
     </div>
 
     <h2 class="title-show-existente">Shows Existentes</h2>
-    <div class="shows-existentes">
-
+    
     <!-- PHP PARA O SELECT -->
     <div class="shows-existentes">
         <?php
