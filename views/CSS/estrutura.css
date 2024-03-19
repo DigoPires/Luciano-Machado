@@ -31,18 +31,18 @@ input:focus::-webkit-input-placeholder {
     border-radius: 5px;
     color: black;
     width: 10vw;
-    height: 2.5vh;
+    height: 3vh;
     box-shadow: 0px 4px 5px rgba(53, 53, 53, 0.75);
 }
 
 .entrar{
-    width: 5vw;
+    width: 3vw;
     background: #dfbf96;
     border-radius: 5px;
     border: none;
     outline: unset;
     box-shadow: 0px 4px 5px rgba(53, 53, 53, 0.75);
-    height: 2.5vh;
+    height: 3vh;
     margin: 10px;
 }
 .entrar:hover{
@@ -218,6 +218,10 @@ footer {
         box-shadow: 0px 4px 5px rgba(53, 53, 53, 0.75);
     }
     
+    .restrita-input{
+        width: 20vw;
+    }
+
     .entrar{
         width: 10vw;
     }
@@ -356,7 +360,7 @@ footer {
         display: flex;
         padding-right: 0%;
     }
-    
+
     
     .flex-mobile{
         display: flex;

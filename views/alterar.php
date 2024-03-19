@@ -33,11 +33,9 @@ mysqli_close($conexao);
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
 </head>
 <body>
-
     <div class="container">
     <h1>Administração</h1>
     <h2>Alterar show existente</h2>
-    <div>
         <!-- formulário para alterar show -->
         <form class="add_show" action="../controllers/alterarShow.php" method="POST">
             <label>Data:</label>
@@ -80,7 +78,6 @@ mysqli_close($conexao);
                 <a href="admin.php"><button type="button">Voltar</button></a>
             </div>
         </form>
-        <div>
     </div>
     <a href="../controllers/logout.php"><button class="sair" type="submit" name="logout">Sair</button></a>
 </body>
