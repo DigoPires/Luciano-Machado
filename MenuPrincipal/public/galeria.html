@@ -47,8 +47,8 @@
                         </a></li>
                     <li><button class="area-restrita">Área Restrita</button></li>
                     <form class="restrita">
-                        <input type="text" placeholder="Login">
-                        <input type="password" placeholder="Senha">
+                        <input class="restrita-input" type="text" placeholder="Login">
+                        <input class="restrita-input" type="password" placeholder="Senha">
                         <input class="entrar" type="submit" value="Entrar">
                     </form>
                 </ul>
@@ -57,27 +57,19 @@
     </header>
 
     <main>
-         <section>
-    <div class="carousel-container">
+        <section>
+            <div class="carousel-container">
                 <h1>Galeria</h1>
-                <div class="carousel carousel-1">
-                    <button class="prev" onclick="prevSlide('carousel-1')">&#10094; </button>
+                <div class="carross">
+                    <button class="prev" onclick="prevSlide('carousel-1')">&#10094;</button>
+                    <div class="carousel carousel-1">
+                        <ul>
+                            <li><img class="img" src="./IMG/carrossel/img1.png" alt="Imagem 1"></li>
+                            <li><img class="img" src="./IMG/carrossel/img2.png" alt="Imagem 2"></li>
+                            <li><img class="img" src="./IMG/carrossel/img3.png" alt="Imagem 3"></li>
+                        </ul>
+                    </div>
                     <button class="next" onclick="nextSlide('carousel-1')"> &#10095;</button>
-                    <ul>
-                        <li><img src="./IMG/carrossel/img1.png" alt="Imagem 1"></li>
-                        <li><img src="./IMG/carrossel/img2.png" alt="Imagem 2"></li>
-                        <li><img src="./IMG/carrossel/img3.png" alt="Imagem 3"></li>
-                    </ul>
-                </div>
-            
-                <div class="carousel carousel-2">
-                    <button class="prev" onclick="prevSlide('carousel-2')">&#10094;</button>
-                    <button class="next" onclick="nextSlide('carousel-2')">&#10095;</button>
-                    <ul>
-                        <li><img src="./IMG/carrossel/img1.png" alt="Imagem 1"></li>
-                        <li><img src="./IMG/carrossel/img2.png" alt="Imagem 2"></li>
-                        <li><img src="./IMG/carrossel/img3.png" alt="Imagem 3"></li>
-                    </ul>
                 </div>
             </div>
         </section>
@@ -96,10 +88,7 @@
     </footer>
 
 
-    <script>
-        // Iniciar o carrossel automaticamente a cada 3 segundos
-        startCarousel('carousel-1', 3000);
-    </script>
+
 
     <script src="./JS/script.js"></script>
     <script src="./JS/scrollMenu.js"></script>
