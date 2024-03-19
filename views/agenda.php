@@ -4,6 +4,7 @@ include_once ('../models/conexao.php');
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@ include_once ('../models/conexao.php');
     <link rel="stylesheet" href="./CSS/estrutura.css">
     <link rel="stylesheet" href="./CSS/agenda.css">
 </head>
+
 <body>
     <header id="header">
         <div class="flex-mobile">
@@ -55,7 +57,7 @@ include_once ('../models/conexao.php');
                     </form>
                 </ul>
             </nav>
-            
+
         </div>
     </header>
 
@@ -73,17 +75,24 @@ include_once ('../models/conexao.php');
 
                 while ($dados = mysqli_fetch_array($resultado)) {
                 ?>
-            <!-- LISTA DE SHOWS NO SELECT DO BANCO -->
-                        <div class="show">
-                        <div class="lista-shows">
-                            <div>Data: <?php echo $dados['data']; ?></div>
-                            <div>Estado: <?php echo $dados['estado']; ?></div>
-                            <div>Cidade: <?php echo $dados['cidade']; ?></div>
-                        </div>  
+                <!-- LISTA DE SHOWS NO SELECT DO BANCO -->
+                <div class="show">
+                    <div class="lista-shows">
+                        <div id="data">Data:
+                            <?php echo $dados['data']; ?>
+                        </div>
+                        <div>Estado:
+                            <?php echo $dados['estado']; ?>
+                        </div>
+                        <div>Cidade:
+                            <?php echo $dados['cidade']; ?>
+                        </div>
                     </div>
-                    <?php
-                    }
-                    ?>
+                    <img id="logo-marca" src="./IMG/logos/logoMarca-preto.png" alt="logo-marca">
+                </div>
+                <?php
+                }
+                ?>
             </div>
         </section>
     </main>
@@ -104,4 +113,5 @@ include_once ('../models/conexao.php');
     <script src="./JS/carrossel.js"></script>
     <script src="./JS/areaRestrita.js"></script>
 </body>
+
 </html>

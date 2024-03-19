@@ -6,7 +6,7 @@ if (isset($_POST['submit']) && !empty($_POST['login']) && !empty($_POST['senha']
     $login = $_POST['login'];
     $senha = $_POST['senha'];
 
-    $sql = "SELECT * FROM tb_login WHERE usu_login = '$login' and usu_senha = '$senha'";
+    $sql = "SELECT * FROM tb_login WHERE usu_login = '$login' and usu_senha = '$senha';";
     $result = $conexao->query($sql);
 
     if (mysqli_num_rows($result) < 1) {
