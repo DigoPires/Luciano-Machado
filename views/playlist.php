@@ -60,6 +60,7 @@
         <img src="./IMG/icones/deezer-logo.svg" alt="Deezer Logo" width="200" height="200">
         <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/playlist/11253390324" width="95%" height="420" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
             <br><br><br>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/3TVXtAsR1Inumwj472S9r4?utm_source=generator" width="95%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             
     </main>
 
