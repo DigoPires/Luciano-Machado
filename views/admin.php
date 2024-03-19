@@ -93,7 +93,7 @@ if (!isset ($_SESSION['login']) || empty ($_SESSION['login'])) {
         $resultado = mysqli_query($conexao, $sql);
 
         while ($dados = mysqli_fetch_array($resultado)) {
-            ?>
+        ?>
     <!-- LISTA DE SHOWS NO SELECT DO BANCO -->
                 <div class="show">
                 <div class="lista-shows">

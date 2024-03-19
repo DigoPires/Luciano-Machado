@@ -58,7 +58,7 @@ input:focus::-webkit-input-placeholder {
 
 body {
     font-family: 'Questrial', sans-serif;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     text-align: center;
     overflow-x: hidden;
@@ -186,6 +186,10 @@ header {
     border-radius: 10px;
 }
 
+main {
+    flex: 1;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -193,7 +197,6 @@ footer {
     padding: 5px 0px 13px 0px;
     background-color: #FFF9E6;
 }
-
 
 
 
