@@ -35,7 +35,7 @@ if (!isset ($_SESSION['login']) || empty ($_SESSION['login'])) {
                 <input class="date" type="date" name="data" required>
                 <label>Estado:</label>
                 <select class="local" type="text" name="local" required>
-                <option value="AC">AC</option>
+                    <option value="AC">AC</option>
                     <option value="AL">AL</option>
                     <option value="AP">AP</option>
                     <option value="AM">AM</option>

@@ -63,3 +63,60 @@ section{
     box-shadow: 0px 8px 15px #7a6447;
     transform: scale(1);
 }
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 3vw; 
+    }
+
+    section {
+        padding: 3vw; 
+        width: 70%; 
+    }
+
+    .restrita-input {
+        font-size: 2vw; 
+        margin: 3vw 0; 
+    }
+
+    .entrar {
+        padding: 3vw; 
+        font-size: 2vw; 
+        margin-top: 5vw; 
+    }
+
+    .entrar:hover {
+        box-shadow: 0px 3vw 4vw #7a6447; 
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 6vw; 
+    }
+
+    section {
+        padding: 5vw; 
+        width: 80%; 
+        max-width: 90%; 
+    }
+
+    .restrita-input {
+        font-size: 4vw;
+        margin: 6vw 0;
+    }
+
+    .entrar {
+        padding: 5vw;
+        font-size: 4vw;
+        margin-top: 8vw;
+    }
+
+    .entrar:hover {
+        box-shadow: 0px 4vw 6vw #7a6447;
+}
+
+}
