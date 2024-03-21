@@ -84,7 +84,6 @@
 
     <script src="./JS/navBar.js"></script>
     <script src="./JS/carrossel.js"></script>
-    <script src="./JS/areaRestrita.js"></script>
 
 </body>
 </html>

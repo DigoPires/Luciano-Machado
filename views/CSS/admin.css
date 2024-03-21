@@ -159,9 +159,16 @@ label {
     box-shadow: 0px 2px 4px #000000;
 }
 
-/* RESPONSIVO */
-@media screen and (max-width: 1024px) {
 
+
+
+
+
+
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 1024px) {
     .add_show {
         width: 30vw;
     }
@@ -182,13 +189,13 @@ label {
         font-size: 1.2em;
     }
 
-    .shows {
-        width: 50vw;
+    .show {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 @media screen and (max-width: 768px) {
-
     .add_show {
         width: 40vw;
     }
@@ -207,8 +214,10 @@ label {
         font-size: 1.2em;
     }
 
-    .shows {
-        width: 60vw;
+
+    .show {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -231,19 +240,25 @@ label {
         width: 40vw;
     }
 
-    .shows {
-        width: 20vw;
+
+    .show {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
+
 @media screen and (max-width: 425px) {
     .add_show {
-        width: 60vw;
+        width: 80vw;
+    }
+    .add_show button {
+        width: 40vw;
+        font-size: 1em;
     }
 
-    .add_show button {
-        width: 30vw;
-        font-size: 1em;
+    .local {
+        width: 45vw;
     }
 
     .sair,
@@ -252,34 +267,23 @@ label {
     }
 
     .add_show input {
-        width: 40vw;
+        width: 50vw;
     }
 
-    .shows {
-        width: 80vw;
-    }
-    .local{
-        width: 20vw;
-    }
 
-    .show{
-        display: flex;
+    .show {
         flex-direction: column;
         align-items: center;
-        }
+    }
 }
 
-@media screen and (max-width:320px) {
-    h1, h2{
-        font-size: 1.3em;
-    }
 
+@media screen and (max-width: 320px) {
     .add_show {
-        width: 80vw;
+        width: 90vw;
     }
-
     .add_show button {
-        width: 40vw;
+        width: 45vw;
     }
 
     .sair,
@@ -289,45 +293,39 @@ label {
     }
 
     .add_show input {
-        width: 50vw;
+        width: 60vw;
     }
 
-    .shows {
-        width: 100vw;
-    }
 
-    .local{
-        width: 20vw;
+    .show {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
-@media screen and (max-width:200px) {
 
+@media screen and (max-width: 200px) {
     .add_show {
         width: 100vw;
     }
 
     .add_show button {
-        width: 45vw;
+        width: 70vw;
+        font-size: 0.8em;
     }
 
     .sair,
     .show button {
-        width: 30vw;
+        width: 50vw;
         font-size: 0.8em;
     }
 
     .add_show input {
-        width: 60vw;
+        width: 80vw;
     }
 
-    .shows {
-        width:30vw;
-    }
-
-    .show button {
-        display: flex;
+    .show {
         flex-direction: column;
+        align-items: center;
     }
-
 }

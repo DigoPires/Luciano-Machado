@@ -122,7 +122,6 @@ include_once ('../models/conexao.php');
 
     <script src="./JS/navBar.js"></script>
     <script src="./JS/carrossel.js"></script>
-    <script src="./JS/areaRestrita.js"></script>
     <script src="./JS/footerAgenda.js"></script>
 </body>
 
