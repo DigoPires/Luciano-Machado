@@ -10,17 +10,16 @@ if (isset($_POST['submit']) && !empty($_POST['login']) && !empty($_POST['senha']
     $result = $conexao->query($sql);
 
     if (mysqli_num_rows($result) < 1) {
-        $_SESSION['login_error'] = 'Acesso não autorizado ou login e senha incorretos!'; 
-        header('Location: ../index.php'); 
-        exit();
-    } else {
-        $_SESSION['login'] = $login;
-        $_SESSION['senha'] = $senha;
+        $_SESSION['login_error'] = "Acesso não autorizado ou login e senha incorretos!"; 
+        header('Location: ../views/loginAdmin.php'); 
+    } 
+    else if($_SESSION['login'] = $login and $_SESSION['senha'] = $senha) 
+    {
+        $_SESSION['sucesso'] = "Login realizado com sucesso!";
         header('Location: ../views/admin.php');
-        exit();
     }
-} else {
-    header('Location: ../index.php');
-    exit();
+} 
+else 
+{
+    header('Location: ../views/loginAdmin.php');
 }
-?>

@@ -42,12 +42,7 @@
                     <li><a href="agenda.php" class="ancora">
                             <p>Agenda</p>
                         </a></li>
-                    <li><button class="area-restrita">Área Restrita</button></li>
-                    <form class="restrita" action="../controllers/login.php" method="POST">
-                        <input class="restrita-input" type="text" placeholder="Login" name="login">
-                        <input class="restrita-input" type="password" placeholder="Senha" name="senha">
-                        <input class="entrar" type="submit" value="Entrar" name="submit">
-                    </form>
+                        <li><a href="./loginAdmin.php"><button class="area-restrita">Área Restrita</button></a></li>
                 </ul>
             </nav>
             

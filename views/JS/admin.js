@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let mensagem = document.querySelector('.mensagem');
 
     if (mensagem) {
-        setTimeout(function() {
             mensagem.remove();
             Swal.fire({
                 title: 'Sucesso',
@@ -13,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 showConfirmButton: false,
                 background:"#fff5e6"
             });
-        }); 
     }
 });
 
@@ -55,3 +53,30 @@ function editarShow(codAgenda) {
 
 
 
+
+//Alertas para erro ou sucesso ao logar.
+document.addEventListener('DOMContentLoaded', function(){
+    if (document.getElementById('login_error'))
+    {
+        Swal.fire({
+            icon: 'error',
+            title: 'Erro!',
+            confirmButtonColor: '#ff0000',
+            text: document.getElementById('login_error').value,
+            position: 'top', 
+            toast: true
+        });
+    }
+    else if (document.getElementById('sucesso'))
+    { 
+        Swal.fire({
+            position: "bottom-end",
+            icon: "success",
+            title: document.getElementById('sucesso').value,
+            showConfirmButton: false,
+            timer: 1500,
+            toast:true
+        });
+    }
+    }
+    )
