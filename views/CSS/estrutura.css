@@ -77,16 +77,21 @@ main{
     width: 100%;
 }
 
+.youtube{
+    border-radius: 10px;
+}
+
 footer {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 5px 0px 13px 0px;
     background-color: #FFF9E6;
-    position: fixed;
     left: 0;
     bottom: 0;
 }
+
+
 
 
 .rolagem {
@@ -353,11 +358,6 @@ footer {
     .icones-img{
         width: 4vh;
     }
-
-    footer{
-        position: sticky;
-        margin-top: 20px;
-    }
     
 
 }
@@ -380,6 +380,11 @@ footer {
         width: 30vw;
         height: 5vh;
         font-size: 3vw;
+    }
+
+    .mobile-menu div{
+        height: 6px;
+        width: 50px;
     }
 
     .logo img{

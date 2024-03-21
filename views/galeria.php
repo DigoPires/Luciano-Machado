@@ -33,7 +33,7 @@
             </div>
             <nav class="menu">
                 <div class="logo">
-                    <a href="./index.html" class="inicio"><img src="./IMG/logos/logo-preta-png.png" alt="Logo"></a>
+                    <a href="../index.php" class="inicio"><img src="./IMG/logos/logo-preta-png.png" alt="Logo"></a>
                 </div>
                 <ul>
                 <li><a href="galeria.php" class="ancora">
@@ -45,12 +45,7 @@
                     <li><a href="agenda.php" class="ancora">
                             <p>Agenda</p>
                         </a></li>
-                    <li><button class="area-restrita">Área Restrita</button></li>
-                    <form class="restrita" action="../controllers/login.php" method="POST">
-                        <input class="restrita-input" type="text" placeholder="Login">
-                        <input class="restrita-input" type="password" placeholder="Senha">
-                        <input class="entrar" type="submit" value="Entrar">
-                    </form>
+                        <li><a href="./loginAdmin.php"><button class="area-restrita">Área Restrita</button></a></li>
                 </ul>
             </nav>
         </div>

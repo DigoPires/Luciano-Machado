@@ -23,4 +23,3 @@ else
 {
     header('Location: ../views/loginAdmin.php');
 }
-?>
