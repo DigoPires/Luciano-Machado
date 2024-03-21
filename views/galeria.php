@@ -33,7 +33,7 @@
             </div>
             <nav class="menu">
                 <div class="logo">
-                    <a href="./index.html" class="inicio"><img src="./IMG/logos/logo-preta-png.png" alt="Logo"></a>
+                    <a href="../index.php" class="inicio"><img src="./IMG/logos/logo-preta-png.png" alt="Logo"></a>
                 </div>
                 <ul>
                 <li><a href="galeria.php" class="ancora">

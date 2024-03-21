@@ -353,11 +353,6 @@ footer {
     .icones-img{
         width: 4vh;
     }
-
-    footer{
-        position: sticky;
-        margin-top: 20px;
-    }
     
 
 }
@@ -380,6 +375,11 @@ footer {
         width: 30vw;
         height: 5vh;
         font-size: 3vw;
+    }
+
+    .mobile-menu div{
+        height: 6px;
+        width: 50px;
     }
 
     .logo img{

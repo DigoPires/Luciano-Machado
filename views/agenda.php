@@ -73,6 +73,12 @@ include_once ('../models/conexao.php');
                 $sql = "SELECT cod_Agenda, DATE_FORMAT(data_Show, '%d/%m/%Y') AS data, estado, cidade FROM tb_agenda";
                 $resultado = mysqli_query($conexao, $sql);
 
+                $quantLinhas = mysqli_num_rows($resultado);
+
+                echo "<script>";
+                echo "let quantLinhas = " . mysqli_num_rows($resultado) . ";";
+                echo "</script>";
+
                 while ($dados = mysqli_fetch_array($resultado)) {
                 ?>
                 <!-- LISTA DE SHOWS NO SELECT DO BANCO -->
@@ -97,7 +103,7 @@ include_once ('../models/conexao.php');
         </section>
     </main>
 
-    <footer class="footer">
+    <footer id="rodape">
         <p>Entre em contato para realizar seu orçamento</p>
         <div class="icones">
             <a href="https://www.instagram.com/lumachadocasamentos/" target="_blank"><img class="icones-img"
@@ -112,6 +118,7 @@ include_once ('../models/conexao.php');
     <script src="./JS/navBar.js"></script>
     <script src="./JS/carrossel.js"></script>
     <script src="./JS/areaRestrita.js"></script>
+    <script src="./JS/footerAgenda.js"></script>
 </body>
 
 </html>
