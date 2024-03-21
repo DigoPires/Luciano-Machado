@@ -92,7 +92,7 @@ if (!isset ($_SESSION['login']) || empty ($_SESSION['login'])) {
         $resultado = mysqli_query($conexao, $sql);
 
         while ($dados = mysqli_fetch_array($resultado)) {
-            ?>
+        ?>
     <!-- LISTA DE SHOWS NO SELECT DO BANCO -->
                 <div class="show">
                 <div class="lista-shows">
@@ -119,7 +119,13 @@ if (!isset ($_SESSION['login']) || empty ($_SESSION['login'])) {
             }
             ?>
     </div>
-
+                <?php
+                        if (isset($_SESSION['sucesso'])) 
+                        {
+                        echo '<input type="hidden" id="sucesso" value="' . $_SESSION['sucesso'] . '">';
+                        unset($_SESSION['sucesso']); 
+                        }
+                ?>
 
 <script src="./JS/admin.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

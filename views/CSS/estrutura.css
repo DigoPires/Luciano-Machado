@@ -58,10 +58,11 @@ input:focus::-webkit-input-placeholder {
 
 body {
     font-family: 'Questrial', sans-serif;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     text-align: center;
     overflow-x: hidden;
+    background: #FFF9E6;
 }
 
 header {
@@ -70,6 +71,23 @@ header {
     width: 100%;
     background-color: #FFF9E6;
 }
+
+main{
+    position: static;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px 0px 13px 0px;
+    background-color: #FFF9E6;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
 
 .rolagem {
     position: sticky;
@@ -185,16 +203,6 @@ header {
     margin: 8px;
     border-radius: 10px;
 }
-
-footer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 5px 0px 13px 0px;
-    background-color: #FFF9E6;
-}
-
-
 
 
 
