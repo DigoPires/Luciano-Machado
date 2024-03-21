@@ -63,11 +63,21 @@
     <footer class="footer">
         <p>Entre em contato para realizar seu orçamento</p>
         <div class="icones">
-            <a href="https://www.instagram.com/lumachadocasamentos/" target="_blank"><img class="icones-img"
-                    src="./IMG/icones/instagram.png" alt="Contato Instagram" class="contatos"></a>
-            <a href="#"> <img class="icones-img" src="./IMG/icones/whatsapp.png" alt="Contato WhatsApp"
-                    class="contatos"></a>
-            <a href="#"> <img class="icones-img" src="./IMG/icones/gmail.png" alt="Contato Gmail" class="contatos"></a>
+
+            <a href="https://www.instagram.com/lumachadocasamentos/" target="_blank">
+                <img class="icones-img"
+                    src="./IMG/icones/instagram.png" alt="Contato Instagram" class="contatos">
+            </a>
+
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <img class="icones-img" src="./IMG/icones/whatsapp.png" alt="Contato WhatsApp"
+                class="contatos">
+            </a>
+
+            <a href="https://www.google.com/intl/pt-BR/gmail/about/" target="_blank">
+                <img class="icones-img" src="./IMG/icones/gmail.png" alt="Contato Gmail" class="contatos">
+            </a>
+
         </div>
         <div class="copyright-div">Design by Alan, Jefferson, Julia, Rodrigo e Ryan - 2024&copy;</div>
     </footer>
