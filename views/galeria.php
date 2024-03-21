@@ -64,9 +64,9 @@
                     <button class="prev" onclick="prevSlide('carousel-1')">&#10094;</button>
                     <div class="carousel carousel-1">
                         <ul>
-                            <li><img class="img" src="./IMG/carrossel/img1.png" alt="Imagem 1"></li>
-                            <li><img class="img" src="./IMG/carrossel/img2.png" alt="Imagem 2"></li>
-                            <li><img class="img" src="./IMG/carrossel/img3.png" alt="Imagem 3"></li>
+                            <li><img src="./IMG/carrossel/img1.png" alt="Imagem 1"></li>
+                            <li><img src="./IMG/carrossel/img2.png" alt="Imagem 2"></li>
+                            <li><img src="./IMG/carrossel/img3.png" alt="Imagem 3"></li>
                         </ul>
                     </div>
                     <button class="next" onclick="nextSlide('carousel-1')"> &#10095;</button>
