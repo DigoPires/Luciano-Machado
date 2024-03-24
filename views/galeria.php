@@ -56,7 +56,7 @@
             <div class="carousel-container">
                 <h1>Galeria</h1>
                 <div class="carross">
-                    <button class="prev" onclick="prevSlide('carousel-1')">&#10094;</button>
+                    <button class="prev" onclick="prevSlide('carousel-1')">&lang;</button>
                     <div class="carousel carousel-1">
                         <ul>
                             <li><img class="img" src="./IMG/carrossel/img1.png" alt="Imagem 1"></li>
@@ -64,7 +64,7 @@
                             <li><img class="img" src="./IMG/carrossel/img3.png" alt="Imagem 3"></li>
                         </ul>
                     </div>
-                    <button class="next" onclick="nextSlide('carousel-1')"> &#10095;</button>
+                    <button class="next" onclick="nextSlide('carousel-1')">&rang;</button>
                 </div>
             </div>
         </section>
