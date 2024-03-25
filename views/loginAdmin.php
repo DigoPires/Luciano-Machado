@@ -23,6 +23,7 @@ session_start();
                 <input class="restrita-input" type="password" placeholder="Senha" name="senha" required>
                 <input class="entrar" type="submit" value="Entrar" name="submit">
             </form>
+            <a href="../index.php" class="voltar">Voltar</a>
         </div>
     </section>
         <?php
