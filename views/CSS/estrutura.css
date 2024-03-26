@@ -159,6 +159,7 @@ footer {
 .nav-bar button{
     background: linear-gradient(0.25turn, #b89568, #F1E5A8);
     border: none;
+    font-family: 'Questrial', sans-serif;
     box-shadow: 0px 5px 10px #7a6447;
     width: 12vw;
     height: 6vh;

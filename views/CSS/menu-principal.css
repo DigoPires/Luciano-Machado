@@ -113,9 +113,20 @@ ul {
 
 
 
-/* Mídia Screen para telas menores (max-width: 900px) */
+/* RESPONSIVO */
+
+@media (max-width: 2715px) and (min-width: 1981px){
+    footer{
+        padding-top: 50px
+    }
+}
+
+
 @media screen and (max-width: 900px) {
 
+    .control-btn{
+        padding: 0;
+    }
     .nome-cli {
         text-align: start;
         font-size: 4vw;
