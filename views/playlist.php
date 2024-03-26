@@ -56,12 +56,13 @@
 
     <main>
         <section class="agenda"></section>
-
-        <img src="./IMG/icones/deezer-logo.svg" alt="Deezer Logo" width="200" height="200">
-        <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/playlist/11253390324" width="95%" height="420" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
-            <br><br><br>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/3TVXtAsR1Inumwj472S9r4?utm_source=generator" width="95%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            
+        <!-- Playlist -->
+            <img src="./IMG/icones/deezer-logo.svg" alt="Deezer Logo" width="200" height="200">
+            <iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/playlist/11253390324" width="95%" height="420" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+        <br>
+            <img src="./IMG/icones/youtube.svg" alt="YouTube Logo" width="200" height="200">
+            <iframe class="youtube" width="95%" height="420" src="https://www.youtube.com/embed/videoseries?si=v752nCHwmyYCZPg7&amp;list=PLW4uJ-bxP4IEL3b9XAIkQWksC9RVw0_Le" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br><br><br>
     </main>
 
     <footer class="footer">
