@@ -35,7 +35,7 @@ if (!isset ($_SESSION['login']) || empty ($_SESSION['login'])) {
                 <input class="date" type="date" name="data" required>
                 <label>Estado:</label>
                 <select class="local" type="text" name="local" required>
-                <option value="AC">AC</option>
+                    <option value="AC">AC</option>
                     <option value="AL">AL</option>
                     <option value="AP">AP</option>
                     <option value="AM">AM</option>
@@ -119,7 +119,13 @@ if (!isset ($_SESSION['login']) || empty ($_SESSION['login'])) {
             }
             ?>
     </div>
-
+                <?php
+                        if (isset($_SESSION['sucesso'])) 
+                        {
+                        echo '<input type="hidden" id="sucesso" value="' . $_SESSION['sucesso'] . '">';
+                        unset($_SESSION['sucesso']); 
+                        }
+                ?>
 
 <script src="./JS/admin.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

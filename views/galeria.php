@@ -33,7 +33,7 @@
             </div>
             <nav class="menu">
                 <div class="logo">
-                    <a href="./index.html" class="inicio"><img src="./IMG/logos/logo-preta-png.png" alt="Logo"></a>
+                    <a href="../index.php" class="inicio"><img src="./IMG/logos/logo-preta-png.png" alt="Logo"></a>
                 </div>
                 <ul>
                 <li><a href="galeria.php" class="ancora">
@@ -45,12 +45,7 @@
                     <li><a href="agenda.php" class="ancora">
                             <p>Agenda</p>
                         </a></li>
-                    <li><button class="area-restrita">Área Restrita</button></li>
-                    <form class="restrita" action="../controllers/login.php" method="POST">
-                        <input class="restrita-input" type="text" placeholder="Login">
-                        <input class="restrita-input" type="password" placeholder="Senha">
-                        <input class="entrar" type="submit" value="Entrar">
-                    </form>
+                        <li><a href="./loginAdmin.php"><button class="area-restrita">Área Restrita</button></a></li>
                 </ul>
             </nav>
         </div>
@@ -61,7 +56,7 @@
             <div class="carousel-container">
                 <h1>Galeria</h1>
                 <div class="carross">
-                    <button class="prev" onclick="prevSlide('carousel-1')">&#10094;</button>
+                    <button class="prev" onclick="prevSlide('carousel-1')">&lang;</button>
                     <div class="carousel carousel-1">
                         <ul>
                             <li><img src="./IMG/carrossel/img1.png" alt="Imagem 1"></li>
@@ -69,7 +64,7 @@
                             <li><img src="./IMG/carrossel/img3.png" alt="Imagem 3"></li>
                         </ul>
                     </div>
-                    <button class="next" onclick="nextSlide('carousel-1')"> &#10095;</button>
+                    <button class="next" onclick="nextSlide('carousel-1')">&rang;</button>
                 </div>
             </div>
         </section>
@@ -78,11 +73,21 @@
     <footer class="footer">
         <p>Entre em contato para realizar seu orçamento</p>
         <div class="icones">
-            <a href="https://www.instagram.com/lumachadocasamentos/" target="_blank"><img class="icones-img"
-                    src="./IMG/icones/instagram.png" alt="Contato Instagram" class="contatos"></a>
-            <a href="#"> <img class="icones-img" src="./IMG/icones/whatsapp.png" alt="Contato WhatsApp"
-                    class="contatos"></a>
-            <a href="#"> <img class="icones-img" src="./IMG/icones/gmail.png" alt="Contato Gmail" class="contatos"></a>
+
+            <a href="https://www.instagram.com/lumachadocasamentos/" target="_blank">
+                <img class="icones-img"
+                    src="./IMG/icones/instagram.png" alt="Contato Instagram" class="contatos">
+            </a>
+
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <img class="icones-img" src="./IMG/icones/whatsapp.png" alt="Contato WhatsApp"
+                class="contatos">
+            </a>
+
+            <a href="https://www.google.com/intl/pt-BR/gmail/about/" target="_blank">
+                <img class="icones-img" src="./IMG/icones/gmail.png" alt="Contato Gmail" class="contatos">
+            </a>
+
         </div>
         <div class="copyright-div">Design by Alan, Jefferson, Julia, Rodrigo e Ryan - 2024&copy;</div>
     </footer>
@@ -90,11 +95,8 @@
 
 
 
-    <script src="./JS/script.js"></script>
-    <script src="./JS/scrollMenu.js"></script>
     <script src="./JS/navBar.js"></script>
     <script src="./JS/carrossel.js"></script>
-    <script src="./JS/areaRestrita.js"></script>
     <script src="./JS/carrossel-galeria.js"></script>
 </body>
 

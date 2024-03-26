@@ -2,8 +2,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: white;
 }
-
 
 h1{
     font-size: 4em;
@@ -15,7 +15,7 @@ h2{
     padding-top: 20px;
 }
 
-footer{
+.footerRelative{
     position: relative;
 }
 

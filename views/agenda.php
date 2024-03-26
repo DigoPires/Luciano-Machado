@@ -49,12 +49,7 @@ include_once ('../models/conexao.php');
                     <li><a href="agenda.php" class="ancora">
                             <p>Agenda</p>
                         </a></li>
-                    <li><button class="area-restrita">Área Restrita</button></li>
-                    <form class="restrita" action="../controllers/login.php" method="POST">
-                        <input class="restrita-input" type="text" placeholder="Login" name="login">
-                        <input class="restrita-input" type="password" placeholder="Senha" name="senha">
-                        <input class="entrar" type="submit" value="Entrar" name="submit">
-                    </form>
+                        <li><a href="./loginAdmin.php"><button class="area-restrita">Área Restrita</button></a></li>
                 </ul>
             </nav>
 
@@ -72,6 +67,12 @@ include_once ('../models/conexao.php');
                 <?php
                 $sql = "SELECT cod_Agenda, DATE_FORMAT(data_Show, '%d/%m/%Y') AS data, estado, cidade FROM tb_agenda";
                 $resultado = mysqli_query($conexao, $sql);
+
+                $quantLinhas = mysqli_num_rows($resultado);
+
+                echo "<script>";
+                echo "let quantLinhas = " . mysqli_num_rows($resultado) . ";";
+                echo "</script>";
 
                 while ($dados = mysqli_fetch_array($resultado)) {
                 ?>
@@ -97,21 +98,31 @@ include_once ('../models/conexao.php');
         </section>
     </main>
 
-    <footer class="footer">
+    <footer id="rodape">
         <p>Entre em contato para realizar seu orçamento</p>
         <div class="icones">
-            <a href="https://www.instagram.com/lumachadocasamentos/" target="_blank"><img class="icones-img"
-                    src="./IMG/icones/instagram.png" alt="Contato Instagram" class="contatos"></a>
-            <a href="#"> <img class="icones-img" src="./IMG/icones/whatsapp.png" alt="Contato WhatsApp"
-                    class="contatos"></a>
-            <a href="#"> <img class="icones-img" src="./IMG/icones/gmail.png" alt="Contato Gmail" class="contatos"></a>
+
+            <a href="https://www.instagram.com/lumachadocasamentos/" target="_blank">
+                <img class="icones-img"
+                    src="./IMG/icones/instagram.png" alt="Contato Instagram" class="contatos">
+            </a>
+
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <img class="icones-img" src="./IMG/icones/whatsapp.png" alt="Contato WhatsApp"
+                class="contatos">
+            </a>
+
+            <a href="https://www.google.com/intl/pt-BR/gmail/about/" target="_blank">
+                <img class="icones-img" src="./IMG/icones/gmail.png" alt="Contato Gmail" class="contatos">
+            </a>
+
         </div>
         <div class="copyright-div">Design by Alan, Jefferson, Julia, Rodrigo e Ryan - 2024&copy;</div>
     </footer>
 
     <script src="./JS/navBar.js"></script>
     <script src="./JS/carrossel.js"></script>
-    <script src="./JS/areaRestrita.js"></script>
+    <script src="./JS/footerAgenda.js"></script>
 </body>
 
 </html>

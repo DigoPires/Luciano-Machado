@@ -26,7 +26,7 @@ section {
 
 .sobre {
     text-align: justify;
-    padding: 1.4vw;
+    padding: 1vw;
     font-size: 1.2vw;
 }
 
@@ -46,6 +46,10 @@ section {
     font-size: 2.2vw;
 }
 
+.avaliacao{
+    margin-bottom: 5px;
+}
+
 /* Carrossel de avaliação */
 ul {
     list-style: none;
@@ -53,26 +57,44 @@ ul {
 
 .nome-cli {
     text-align: start;
+    padding: 10px;
 }
 
 .avaliacao-li {
     text-align: justify;
-    margin-top: 2vh;
     font-size: 1vw;
+    padding: 10px;
 }
 
 .carrosel-clientes {
-    display: flex;
     background-color: rgba(255, 255, 255, 0.582);
-    align-items: center;
     border-radius: 15px;
     font-size: 1vw;
     box-shadow: 0px 5px 10px #c5c1bc;
-    width: 50vw;
+    width: 45vw;
 }
 
 .carousel-container {
     overflow: hidden;
+}
+
+.op-clientes{
+    display: flex;
+}
+.control-btn{
+    border: none;
+    outline: unset;
+    background: none;
+    font-size: 3em;
+    margin: 5px;
+    color: grey;
+    font-weight:bolder;
+    transition: transform 0.3s ease;
+}
+
+.control-btn:hover{
+    color: black;
+    transform: scale(1.2);
 }
 
 .carousel-wrapper {
@@ -84,26 +106,14 @@ ul {
     min-width: 100%;
     box-sizing: border-box;
 }
-
-.carousel-controls {
-    display: flex;
-    margin-bottom: 20px;
+.carrosel{
+    margin-top: 10px;
 }
 
-.carrosel-clientes button {
-    background: none;
-    border: none;
-    font-size: 2vw;
-    padding: 20px;
-    cursor: pointer;
-}
+
 
 /* Mídia Screen para telas menores (max-width: 900px) */
 @media screen and (max-width: 900px) {
-
-    .error-message{
-    font-size: 2vw;
-    }
 
     .nome-cli {
         text-align: start;
@@ -113,10 +123,10 @@ ul {
         width: 80vw;
     }
     .sobre{
-        font-size: 2.5vw;
+        font-size: 0.6em;
     }
 
-    .sobre-artista, .op-clientes{
+    .sobre-artista{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -126,7 +136,7 @@ ul {
     .avaliacao-li {
         text-align: justify;
         margin-top: 2vh;
-        font-size: 3vw;
+        font-size: 2.5em;
     }
 
     .carrosel-clientes {
@@ -156,11 +166,12 @@ ul {
         /* font-size: 0.8vw; */
     }
     .sobre{
-        font-size: 1em;
+        font-size: 0.8em;
+        padding: 10px;
     }
     .avaliacao-li {
         text-align: justify;
-        font-size: 0.5em;
+        font-size: 0.8em;
     }
     .carrosel-clientes {
         display: flex;
@@ -168,7 +179,7 @@ ul {
         width: 80vw;
         align-items: center;
         border-radius: 15px;
-        font-size: 1.6em;
+        font-size: 1.4em;
         padding: 1vh ;
     }
 
@@ -176,7 +187,7 @@ ul {
         width: 80vw;
     }
 }
-@media screen and (max-width: 281px) {
+@media screen and (max-width: 280px) {
 
 
     .error-message{
@@ -201,7 +212,7 @@ ul {
     .carrosel-clientes {
         display: flex;
         background-color: rgba(255, 255, 255, 0.582);
-        width: 100vw;
+        width: 80vw;
         align-items: center;
         border-radius: 15px;
     }

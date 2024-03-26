@@ -356,7 +356,10 @@ footer {
     .icones-img{
         width: 4vh;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 818a10b6f28d1aeee3e30af33fbcfcf5eec80b7b
     
 
 }
@@ -381,15 +384,17 @@ footer {
         font-size: 3vw;
     }
 
+    .mobile-menu div{
+        height: 6px;
+        width: 50px;
+    }
+
     .logo img{
         width: 40vw;
     }
 
     .copyright-div{
         font-size: 1.0em;
-    }
-    footer{
-        padding-bottom: 40px;
     }
 
 }
@@ -420,8 +425,5 @@ footer {
         gap: 10px;
     }
 
-    footer{
-        padding-bottom: 50px;
-    }
 }
 

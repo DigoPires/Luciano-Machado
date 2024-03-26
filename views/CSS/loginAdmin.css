@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+body {
+    font-family: 'Questrial', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.568)), url(../IMG/logos/logo-branca-fundo-gold.png);
+    font-weight: bold;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1{
+    font-size: 1.5vw;
+}
+section{
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ebe2b5dc;
+    padding: 15px;
+    border-radius: 15px;
+    width: 15%;
+    text-align: center;
+    padding: 50px;
+}
+
+.restrita-input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(49, 49, 49);
+    outline: none;
+    color: rgb(28, 28, 28);
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+.entrar{
+    color: black;
+    font-weight: bold;
+    background: linear-gradient(0.25turn,#dbcf94, #d4b995 );
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    font-size: 1vw;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.voltar{
+    text-decoration: none;
+    color: black;
+    background: linear-gradient(0.25turn,#dbcf94, #d4b995 );
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.entrar:hover{
+    cursor: pointer;
+    background: linear-gradient(0.25turn,#e9d1b1, #eee2a8 );
+    box-shadow: 0px 8px 12px #7a6447;
+    transform: scale(1);
+}
+
+.voltar:hover{
+    cursor: pointer;
+    background: linear-gradient(0.25turn,#e9d1b1, #eee2a8 );
+    box-shadow: 0px 8px 5px #7a6447;
+    transform: scale(1);
+}
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 3vw; 
+    }
+
+    section {
+        padding: 3vw; 
+        width: 70%; 
+    }
+
+    .restrita-input {
+        font-size: 2vw; 
+        margin: 3vw 0; 
+    }
+
+    .entrar {
+        padding: 3vw; 
+        font-size: 2vw; 
+        margin-top: 5vw; 
+    }
+
+    .entrar:hover {
+        box-shadow: 0px 3vw 4vw #7a6447; 
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 6vw; 
+    }
+
+    section {
+        padding: 5vw; 
+        width: 80%; 
+        max-width: 90%; 
+    }
+
+    .restrita-input {
+        font-size: 4vw;
+        margin: 6vw 0;
+    }
+
+    .entrar {
+        padding: 5vw;
+        font-size: 4vw;
+        margin-top: 8vw;
+    }
+
+    .entrar:hover {
+        box-shadow: 0px 4vw 6vw #7a6447;
+}
+
+}

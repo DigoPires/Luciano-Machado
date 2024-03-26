@@ -24,7 +24,7 @@ session_start();
             </div> <!-- mobile-menu -->
             <div class="logo-container">
                 <div class="logo">
-                <a href="./index.php" class="inicio"><img src="./views/IMG/logos/logo-preta-png.png" alt="Logo"></a>
+                    <a href="./index.php" class="inicio"><img src="./views/IMG/logos/logo-preta-png.png" alt="Logo"></a>
                 </div>
             </div>
         </div> <!-- flex-mobile -->
@@ -50,23 +50,10 @@ session_start();
                     <li><a href="./views/agenda.php" class="ancora">
                             <p>Agenda</p>
                         </a></li>
-                    <li><button class="area-restrita">Área Restrita</button></li>
-                    <form class="restrita" action="controllers/login.php" method="POST">
-                        <input class="restrita-input" type="text" placeholder="Login" name="login">
-                        <input class="restrita-input" type="password" placeholder="Senha" name="senha">
-                        <input class="entrar" type="submit" value="Entrar" name="submit">
-                    </form>
+                    <li><a href="./views/loginAdmin.php"><button class="area-restrita">Área Restrita</button></a></li>
                 </ul>
             </nav>
         </div>
-            <div class="error-message">
-                <?php
-                if (isset($_SESSION['login_error'])) {
-                echo $_SESSION['login_error'];
-                unset($_SESSION['login_error']);
-                }
-                ?>
-            </div>
     </header>
 
     <main>
@@ -87,41 +74,46 @@ session_start();
                     </p>
                 </div>
             </div>
-            <div class="op-clientes">
-                <h2 class="avaliacao">Depoimentos</h2>
-                <!-- carrosel -->
-                <div class="carrosel-clientes">
-                    <button class="control-btn" onclick="prevSlide()">&lt;</button>
-                    <div class="carousel-container">
-                        <div class="carousel-wrapper">
-                            <div class="carousel-item">
-                                <ul>
-                                    <li class="nome-cli">Nicole Gomes Melo</li>
-                                    <li class="avaliacao-li">"É claro que o consenso sobre a necessidade de qualificação
-                                        promove a alavancagem do sistema de participação geral."</li>
-                                </ul>
-                            </div>
-                            <div class="carousel-item">
-                                <ul>
-                                    <li class="nome-cli">Ágatha Correia Carvalho</li>
-                                    <li class="avaliacao-li">"Caros amigos, o julgamento imparcial das eventualidades
-                                        faz
-                                        parte de um processo de gerenciamento das posturas dos órgãos dirigentes com
-                                        relação às suas atribuições."
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="carousel-item">
-                                <ul>
-                                    <li class="nome-cli">Yasmin Silva Lima</li>
-                                    <li class="avaliacao-li">"A nível organizacional, a execução dos pontos do programa
-                                        maximiza as possibilidades por conta das diversas correntes de pensamento."
-                                    </li>
-                                </ul>
+            <!-- carrosel -->
+            <div class="carrosel">
+                <h2 class="avaliacao">Feedbacks</h2>
+                <div class="op-clientes">
+                    <button class="control-btn" onclick="prevSlide()">&lang;</button>
+                    <div class="carrosel-clientes">
+                        <div class="carousel-container">
+                            <div class="carousel-wrapper">
+                                <div class="carousel-item">
+                                    <ul>
+                                        <li class="nome-cli">Nicole Gomes Melo</li>
+                                        <li class="avaliacao-li">"É claro que o consenso sobre a necessidade de
+                                            qualificação
+                                            promove a alavancagem do sistema de participação geral."</li>
+                                    </ul>
+                                </div>
+                                <div class="carousel-item">
+                                    <ul>
+                                        <li class="nome-cli">Ágatha Correia Carvalho</li>
+                                        <li class="avaliacao-li">"Caros amigos, o julgamento imparcial das
+                                            eventualidades
+                                            faz
+                                            parte de um processo de gerenciamento das posturas dos órgãos dirigentes com
+                                            relação às suas atribuições."
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="carousel-item">
+                                    <ul>
+                                        <li class="nome-cli">Yasmin Silva Lima</li>
+                                        <li class="avaliacao-li">"A nível organizacional, a execução dos pontos do
+                                            programa
+                                            maximiza as possibilidades por conta das diversas correntes de pensamento."
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <button class="control-btn" onclick="nextSlide()">&gt;</button>
+                    <button class="control-btn" onclick="nextSlide()">&rang;</button>
                 </div>
             </div>
         </section>
@@ -132,9 +124,10 @@ session_start();
         <div class="icones">
             <a href="https://www.instagram.com/lumachadocasamentos/" target="_blank"><img class="icones-img"
                     src="./views/IMG/icones/instagram.png" alt="Contato Instagram" class="contatos"></a>
-            <a href="#"> <img class="icones-img" src="./views/IMG/icones/whatsapp.png" alt="Contato WhatsApp"
-                    class="contatos"></a>
-            <a href="#"> <img class="icones-img" src="./views/IMG/icones/gmail.png" alt="Contato Gmail" class="contatos"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"> <img class="icones-img"
+                    src="./views/IMG/icones/whatsapp.png" alt="Contato WhatsApp" class="contatos"></a>
+            <a href="https://www.google.com/intl/pt-BR/gmail/about/" target="_blank"> <img class="icones-img"
+                    src="./views/IMG/icones/gmail.png" alt="Contato Gmail" class="contatos"></a>
         </div>
         <!-- teste -->
         <div class="copyright-div">Design by Alan, Jefferson, Julia, Rodrigo e Ryan - 2024&copy;</div>
@@ -142,9 +135,8 @@ session_start();
 
     <script src="./views/JS/navBar.js"></script>
     <script src="./views/JS/carrossel.js"></script>
-    <script src="./views/JS/areaRestrita.js"></script>
 
-    
+
 </body>
 
 </html>
