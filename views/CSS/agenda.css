@@ -15,15 +15,20 @@ h2{
     padding-top: 20px;
 }
 
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
 .footerRelative{
     position: relative;
 }
 
 .titulo-menu{
-    background-image: url(../IMG/banda_casamento.jpeg);
+    background:linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.568)), url(../IMG/backgrounds/wpp-carrosel.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     color: white;
     padding: 3vw;
 }
