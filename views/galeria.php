@@ -85,8 +85,6 @@
 
 
 
-    <script src="./JS/script.js"></script>
-    <script src="./JS/scrollMenu.js"></script>
     <script src="./JS/navBar.js"></script>
     <script src="./JS/carrossel.js"></script>
     <script src="./JS/admin.js"></script>

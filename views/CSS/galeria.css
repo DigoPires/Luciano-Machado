@@ -21,7 +21,7 @@ main{
 
 .carousel-container h1 {
     margin: 20px;
-    font-size: 1.7vw;
+    font-size: 2vw;
 }
 .carousel {
     overflow: hidden;
@@ -30,7 +30,6 @@ main{
 .carousel ul {
     list-style: none;
     display: flex;
-    transition: transform 1s ease;
 }
 .carousel li {
     flex: 0 0 100%; /* Isso aqui é para ocupar a largura total do container*/
@@ -74,6 +73,7 @@ main{
 }
 
 
+
 .carousel-container .prev, .carousel-container .next {
     background-color: transparent; /* Remove o fundo branco */
     border: none;
@@ -86,19 +86,32 @@ main{
 
 
 
+@media (max-width: 2560px) {
+footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
 
+}
 
 @media (max-width: 1400px) {
 
+    footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+
+    .carousel-container h1 {
+        margin: 20px;
+        font-size: 3.2vw;
+    }
 
     .carousel-1 {
         max-width: 70vw; /* Largura máxima do primeiro carrossel */
     }
 
-    .carousel-container h1 {
-        margin: 20px;
-        font-size: 2.7vw;
-    }
 }
 
 
@@ -109,15 +122,21 @@ main{
 
     .carousel-container h1 {
         margin: 20px;
-        font-size: 2.7vw;
+        font-size: 4vw;
     }
 }
+
 @media (max-width: 900px) {
     body{
         background: linear-gradient(0.25turn, #b89568be,#7e7e1633), url(../IMG/backgrounds/wpp-carrosel-900px.png);
         background-position: center;
         background-size: cover;
   
+    }
+
+    .carousel-container h1 {
+        margin: 15px;
+        font-size: 5.2vw;
     }
 }
 
@@ -135,7 +154,7 @@ main{
 
     .carousel-container h1 {
         margin: 15px;
-        font-size: 3.7vw;
+        font-size: 4.8vw;
     }
 }
 
@@ -153,7 +172,7 @@ main{
 
     .carousel-container h1 {
         margin: 15px;
-        font-size: 3.7vw;
+        font-size: 5vw;
     }
 }
 
@@ -163,22 +182,22 @@ main{
         background: linear-gradient(0.25turn, #b89568be,#7e7e161a), url(../IMG/backgrounds/corousel-mobile.jpg);
         background-position: center;
         background-size: cover;
-  
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh ;
     }
  
-
     .carousel-container{
      width: 90vw;
     }
 
     .carousel-container h1 {
         margin: 15px;
-        font-size: 4vw;
+        font-size: 6.5vw;
     }
 }
 
-@media (max-width: 400px) {
-
+@media (max-width: 425px) {
 
     .prev, .next {
         font-size: 40px;
