@@ -78,7 +78,7 @@ session_start();
             <div class="carrosel">
                 <h2 class="avaliacao">Feedbacks</h2>
                 <div class="op-clientes">
-                    <button class="control-btn" onclick="prevSlide()">&lang;</button>
+                    <button class="control-btn" onclick="prevSlide()">&#10094;</button>
                     <div class="carrosel-clientes">
                         <div class="carousel-container">
                             <div class="carousel-wrapper">
@@ -113,7 +113,7 @@ session_start();
                             </div>
                         </div>
                     </div>
-                    <button class="control-btn" onclick="nextSlide()">&rang;</button>
+                    <button class="control-btn" onclick="nextSlide()">&#10095;</button>
                 </div>
             </div>
         </section>
