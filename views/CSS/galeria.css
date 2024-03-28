@@ -30,6 +30,7 @@ main{
 .carousel ul {
     list-style: none;
     display: flex;
+    
 }
 .carousel li {
     flex: 0 0 100%; /* Isso aqui é para ocupar a largura total do container*/
@@ -51,6 +52,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: auto;
 }
 
 .prev, .next {
@@ -81,7 +83,10 @@ main{
 }
 
 
-
+.carousel-right {
+    transform: translateX(800%);
+    opacity: 0;
+}
 
 
 

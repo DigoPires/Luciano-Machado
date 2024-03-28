@@ -31,7 +31,7 @@ function confirmarExclusao(codAgenda) {
         if (result.isConfirmed) {
             setTimeout(() => {
                 document.getElementById('form-excluir-' + codAgenda).submit();
-            }, 3000);
+            }, 1000);
             Swal.fire({
                 title: 'Excluído!',
                 text: 'O show foi excluído com sucesso!',
