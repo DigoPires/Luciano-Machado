@@ -1,8 +1,8 @@
-drop database IF EXISTS db_LucianoMachado;
+-- drop database IF EXISTS db_LucianoMachado;
 
-create database IF NOT EXISTS db_LucianoMachado;
+-- create database IF NOT EXISTS db_LucianoMachado;
 
-use db_LucianoMachado;
+-- use db_LucianoMachado;
 
 create table tb_Agenda(
     cod_Agenda int not null auto_increment,
