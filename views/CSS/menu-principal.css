@@ -122,13 +122,12 @@ ul {
 
 
 @media screen and (max-width: 900px) {
-
     .control-btn{
         padding: 0;
     }
     .nome-cli {
         text-align: center;
-        font-size: 4vw;
+        font-size: 3vw;
     }
     .sobre-div{
         width: 80vw;
@@ -191,6 +190,12 @@ ul {
 
     .sobre-div {
         width: 80vw;
+    }
+}
+
+@media screen and (max-height: 600px){
+    .menu-principal{
+        height: auto;
     }
 }
 @media screen and (max-width: 280px) {
