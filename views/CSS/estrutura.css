@@ -231,9 +231,6 @@ footer {
 
 
 @media (max-width: 900px) {    
-    body{
-        font-size: 3vw;
-    }
     .entrar{
         width: 10vw;
     }
