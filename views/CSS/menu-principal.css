@@ -57,21 +57,24 @@ ul {
 
 .nome-cli {
     text-align: start;
-    padding: 10px;
+    padding: 5px;
 }
 
 .avaliacao-li {
     text-align: justify;
     font-size: 1vw;
-    padding: 10px;
+    padding: 5px;
 }
 
 .carrosel-clientes {
+    display: flex;
     background-color: rgba(255, 255, 255, 0.582);
     border-radius: 15px;
     font-size: 1vw;
     box-shadow: 0px 5px 10px #c5c1bc;
-    width: 45vw;
+    width: 40vw;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel-container {
@@ -106,12 +109,6 @@ ul {
     min-width: 100%;
     box-sizing: border-box;
 }
-.carrosel{
-    margin-top: 10px;
-}
-
-
-
 /* RESPONSIVO */
 
 @media (max-width: 2715px) and (min-width: 1981px){
@@ -125,28 +122,23 @@ ul {
     .control-btn{
         padding: 0;
     }
+
     .nome-cli {
         text-align: center;
-        font-size: 3vw;
+        font-size: 2.5vw;
+        font-style:italic;
     }
     .sobre-div{
-        width: 80vw;
+        width: 90vw;
     }
     .sobre{
         font-size: 0.6em;
     }
 
-    .sobre-artista{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        gap: 5px;
-    }
-
     .avaliacao-li {
         text-align: justify;
         margin-top: 2vh;
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     .carrosel-clientes {
@@ -161,35 +153,31 @@ ul {
     .avaliacao {
         font-size: 4vw;
     }
+    .avaliacao{
+        margin-top: 20px;
+    }
 
 }
 
 /* Mídia Screen para telas muito pequenas (max-width: 600px) */
 @media screen and (max-width: 700px) {
 
-    .error-message{
-        font-size: 0.8em;
-        }
     .sobre{
         font-size: 0.8em;
-        padding: 10px;
     }
     .avaliacao-li {
-        text-align: justify;
         font-size: 0.8em;
     }
     .carrosel-clientes {
-        display: flex;
-        background-color: rgba(255, 255, 255, 0.582);
         width: 80vw;
-        align-items: center;
-        border-radius: 15px;
+        font-size: 1.5em;
+    }
+    .nome-cli{
         font-size: 1em;
-        padding: 1vh;
     }
 
     .sobre-div {
-        width: 80vw;
+        width: 90vw;
     }
 }
 
@@ -199,32 +187,20 @@ ul {
     }
 }
 @media screen and (max-width: 280px) {
-
-
-    .error-message{
-        font-size: 0.5em;
-        }
-
     .sobre{
-        font-size: 3.4vw;
-    }
-    .sobre-div{
-        width: 5vw;
+        font-size: 1.2em;
     }
     .avaliacao-li {
-        text-align: justify;
-        font-size: 4vw;
+        font-size: 0.6em;
     }
 
-    .carrosel-clientes {
-        display: flex;
-        background-color: rgba(255, 255, 255, 0.582);
-        width: 80vw;
-        align-items: center;
-        border-radius: 15px;
+    .nome-cli{
+        font-size: 0.6em;
     }
-
-    .sobre-div {
-        width: 90vw;
+    .title-sobre,.avaliacao{
+        font-size: 1.2em;
+    }
+    .control-btn{
+        font-size: 2.3em;
     }
 }
