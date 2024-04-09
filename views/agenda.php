@@ -99,7 +99,7 @@ include_once ('../models/conexao.php');
     </main>
 
     <footer id="rodape">
-        <p>Entre em contato para realizar seu orçamento</p>
+    <p class="info">Entre em contato para mais informações</p>
         <div class="icones">
 
             <a href="https://www.instagram.com/lumachadocasamentos/" target="_blank">

@@ -1,10 +1,10 @@
 <?php
 session_start();
 ?>
-
+ 
 <!DOCTYPE html>
 <html lang="pt-br">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@ session_start();
     <link rel="stylesheet" href="./views/CSS/estrutura.css">
     <link rel="stylesheet" href="./views/CSS/menu-principal.css">
 </head>
-
+ 
 <body>
     <header id="header">
         <div class="flex-mobile">
@@ -28,7 +28,7 @@ session_start();
                 </div>
             </div>
         </div> <!-- flex-mobile -->
-
+ 
         <div class="nav-bar">
             <div class="mobile-menu-fechar">
                 <div class="mobile-menu-fechar-x">
@@ -55,7 +55,7 @@ session_start();
             </nav>
         </div>
     </header>
-
+ 
     <main>
         <section class="menu-principal">
             <!-- sobre o músico -->
@@ -64,13 +64,13 @@ session_start();
                 <div class="sobre-div">
                     <p class="sobre">Bem-vindo ao nosso espaço dedicado a celebrar momentos especiais! Com mais de 15
                         anos de experiência na condução de cerimônias de casamentos e eventos, temos a honra de ser
-                        parte dehistórias únicas em diferentes partes do mundo.br
+                        parte de histórias únicas em diferentes partes do mundo
                         <br><br>
                         Em nossa jornada, encontramos inspiração na arte de tornar sonhos realidade e criar memórias que
                         resistem ao teste do tempo. Se você está prestes a dar o próximo passo no casamento ou
                         planejando um evento significativo, estamos aqui para fazer parte desses momentos
                         extraordinários.
-
+ 
                     </p>
                 </div>
             </div>
@@ -118,9 +118,9 @@ session_start();
             </div>
         </section>
     </main>
-
+ 
     <footer class="footer">
-        <p>Entre em contato para realizar seu orçamento</p>
+        <p class="info">Entre em contato para mais informações</p>
         <div class="icones">
             <a href="https://www.instagram.com/lumachadocasamentos/" target="_blank"><img class="icones-img"
                     src="./views/IMG/icones/instagram.png" alt="Contato Instagram" class="contatos"></a>
@@ -132,11 +132,11 @@ session_start();
         <!-- teste -->
         <div class="copyright-div">Design by Alan, Jefferson, Julia, Rodrigo e Ryan - 2024&copy;</div>
     </footer>
-
+ 
     <script src="./views/JS/navBar.js"></script>
     <script src="./views/JS/carrossel.js"></script>
-
-
+ 
+ 
 </body>
-
+ 
 </html>
